@@ -1,0 +1,35 @@
+@extends('admin.templates.admin.layout')
+
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Oda Özellik Oluştur</h2>
+                        <a href="{{ route('room_possibility.index') }}" class="btn btn-info pull-right">
+                            <i class="fa fa-undo"></i> Oda Özellikleri Listesine Dön</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <form action="{{ route('room_possibility.update',$possibility->id) }}" method="post">
+                            @csrf
+                            @method('PUT')
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3">
+                                    <label class="control-label" for="name">Oda Özellik Adı
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="name" value="{{ $possibility->name ?? old('name') }}" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Kaydet</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

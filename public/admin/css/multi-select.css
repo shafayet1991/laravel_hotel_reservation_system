@@ -1,0 +1,22 @@
+.multi-select {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+.multi-select select {
+	position: relative;
+	display: inline-block;
+	width: 49.5%;
+	height: 100%;
+	outline: none;
+	border: 1px #9e9e9e solid;
+	padding: 6px;
+	border-radius: 3px;
+}
+.multi-select select option {
+	margin-bottom: 7px;
+	padding: 6px;
+}
+.multi-select select option:hover {
+	background-color: #eeeeee;
+}

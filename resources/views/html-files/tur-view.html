@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Otel Rezevasyon</title>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+	<div class="container-fluid special-color-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-12 pt-2">
+					<label class="text-white font-weight-bolder font-small d-inline-block">
+						<i class="fa fa-phone-square text-muted"></i> &nbsp; 444 4 444
+					</label>
+					<label class="d-inline-block text-white font-weight-bold ml-0 ml-md-2">|</label>
+					<label class="text-white font-weight-bolder font-small d-inline-block ml-0 ml-md-2">
+						0850 850 8585
+					</label>
+					<label class="d-inline-block text-white font-weight-bold ml-0 ml-md-2">|</label>
+					<label class="text-white font-weight-bolder font-small d-inline-block ml-0 ml-md-2">
+						Satış Acentalarımız
+					</label>
+				</div>
+				<div class="col-md-6 col-12 pr-0 pt-0 pt-md-2">
+					<label class="float-right text-white font-small">
+						Tıklayın Sizi Arayalım
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid header border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-12 pr-0">
+					<nav class="navbar navbar-expand-lg header pl-0 pr-0">
+					  	<a class="navbar-brand font-weight-bold" href="#">
+					  		<span class="first-text-color">OTEL</span>
+					  		<span class="second-text-color">REZERV</span>
+					  	</a>
+					  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header"
+					    aria-controls="header" aria-expanded="false" aria-label="Toggle navigation">
+					    	<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+					  	</button>
+					  	<div class="collapse navbar-collapse" id="header">
+					    	<ul class="navbar-nav mr-auto pt-1">
+					      		<li class="nav-item active">
+					        		<a class="nav-link font-small font-weight-bolder" href="#">OTEL</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link font-small font-weight-bolder" href="#">KIBRIS</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link font-small font-weight-bolder" href="#">TUR</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link font-small font-weight-bolder" href="#">BALAYI</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link font-small font-weight-bolder" href="#">HAC & UMRE</a>
+					      		</li>
+					   		</ul>
+					   		<label class="font-weight-bolder d-inline-block mt-md-2">
+					   			Giriş Yap
+					   		</label> &nbsp;
+					   		<label class="d-inline-block mt-md-2">veya</label> &nbsp;
+					   		<label class="font-weight-bolder d-inline-block mt-md-2">
+					   			Kayıt Ol
+					   		</label>
+					  	</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-12">
+					<ul class="nav nav-tabs first-special-tabs mt-5" id="myTab" role="tablist">
+					  	<li class="nav-item text-center">
+					  		<div class="nav-item-background"></div>
+					    	<a class="nav-link active font-weight-bold pr-4 pl-4" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">
+					    		<i class="fa fa-hotel"></i><br>
+					    		OTEL
+					    	</a>
+					  	</li>
+					  	<li class="nav-item text-center ml-2">
+					  		<div class="nav-item-background"></div>
+					    	<a class="nav-link font-weight-bold pr-4 pl-4" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">
+					    		<i class="fa fa-suitcase"></i><br>
+					    		TUR
+					    	</a>
+					  	</li>
+					  	<li class="nav-item text-center ml-2">
+					  		<div class="nav-item-background"></div>
+					    	<a class="nav-link font-weight-bold pr-4 pl-4" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">
+					    		<i class="fa fa-plane"></i><br>
+					    		UÇAK BİLETİ
+					    	</a>
+					  	</li>
+					</ul>
+					<div class="tab-content mt-5" id="myTabContent">
+					  	<div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+					  		<div class="container first-special-container mt-3 pt-2 pb-2 pr-4 pl-4">
+					  			<div class="row">
+					  				<div class="col-md-4 col-12 p-0">
+								      	<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text" style="border-top-left-radius: 6px !important; border-bottom-left-radius: 6px !important;">
+								          			<i class="fa fa-search"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" list="hotels-data" placeholder="Otel Adı Giriniz" value="The Land of Legends"/>
+								        	<datalist id="hotels-data">
+								        		<option>The Land of Legends</option>
+								        		<option>Maxx Royale</option>
+								        	</datalist>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-2 col-6 p-0 mt-1 mt-md-0">
+					  					<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text">
+								          			<i class="fa fa-calendar-alt"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" id="datepicker-2" value="11.04.2019"/>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-2 col-6 p-0 mt-1 mt-md-0">
+					  					<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text">
+								          			<i class="fa fa-calendar-alt"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" id="datepicker-1" value="12.04.2019"/>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-2 col-12 p-0 mt-1 mt-md-0">
+					  					<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text">
+								          			<i class="fa fa-user"></i>
+								          		</div>
+							        		</div>
+								        	<button class="form-control first-special-input pt-2" data-toggle="dropdown" aria-expanded="false">
+								        		<label class="float-left mt-2 font-weight-bold">4 Kişi</label>
+								        	</button>
+								        	<div class="dropdown-menu dropdown-menu-right pt-1 pb-1 pl-2 pr-2" role="menu">
+								        		<div class="row">
+								        			<div class="col-md-12 col-12 pl-3">
+								        				<label class="font-small text-muted">
+								        					Yetişkin Sayısı
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="4" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        			<div class="col-md-12 col-12 pl-3 mb-2 mt-1">
+								        				<label class="font-small text-muted">
+								        					Çocuk Sayısı
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="0" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        		</div>
+			                            	</div>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-2 col-12 p-0 pr-2 pr-md-0 mt-1 mt-md-0 first-special-col" style="border-top-right-radius: 6px !important; border-bottom-right-radius: 6px !important;">
+					  					<button class="btn font-weight-bold first-special-button col-md-11 col-12">
+					  						Ara &nbsp; <i class="fa fa-chevron-right"></i>
+					  					</button>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+					  		<div class="container first-special-container mt-3 pt-2 pb-2 pr-4 pl-4">
+					  			<div class="row">
+					  				<div class="col-md-5 col-12 p-0">
+								      	<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text" style="border-top-left-radius: 6px !important; border-bottom-left-radius: 6px !important;">
+								          			<i class="fa fa-suitcase"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" list="all-turs" placeholder="Otel Adı Giriniz" value="Tüm Kültür / Yurt Dışı / Gemi Turları"/>
+								        	<datalist id="all-turs">
+								        		<option>Tüm Kültür Turları</option>
+								        		<option>Tüm Yurt Dışı Turları</option>
+								        		<option>Tüm Gemi Turları</option>
+								        	</datalist>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-5 col-12 p-0 pt-1 pt-md-0">
+								      	<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text">
+								          			<i class="fa fa-suitcase"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" list="turs" placeholder="Otel Adı Giriniz" value="Tur seçiniz"/>
+								        	<datalist id="turs">
+								        		<option>Afrika Turları</option>
+								        		<option>Bahar Fırsatları</option>
+								        	</datalist>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-2 col-12 p-0 pr-2 pr-md-0 mt-1 mt-md-0 first-special-col" style="border-top-right-radius: 6px !important; border-bottom-right-radius: 6px !important;">
+					  					<button class="btn font-weight-bold first-special-button col-md-11 col-12">
+					  						Ara &nbsp; <i class="fa fa-chevron-right"></i>
+					  					</button>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+					  		<div class="container first-special-container mt-3 pt-2 pb-2 pr-4 pl-4">
+					  			<div class="row">
+					  				<div class="col-md-3 col-12 p-0">
+								      	<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text" style="border-top-left-radius: 6px !important; border-bottom-left-radius: 6px !important;">
+								          			<i class="fa fa-map-marker-alt"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" list="departure-airports" placeholder="Nereden"/>
+								        	<datalist id="departure-airports">
+								        		<option>Antalya Havalimanı</option>
+								        		<option>İstanbul Havalimanı</option>
+								        	</datalist>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-3 col-12 p-0 pt-1 pt-md-0">
+								      	<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text">
+								          			<i class="fa fa-map-marker-alt"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" list="going-airports" placeholder="Nereye"/>
+								        	<datalist id="going-airports">
+								        		<option>Antalya Havalimanı</option>
+								        		<option>İstanbul Havalimanı</option>
+								        	</datalist>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-2 col-6 p-0 mt-1 mt-md-0">
+					  					<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text">
+								          			<i class="fa fa-calendar-alt"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" id="datepicker-3" value="11.04.2019"/>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-2 col-6 p-0 mt-1 mt-md-0">
+					  					<div class="input-group">
+								        	<div class="input-group-prepend">
+								          		<div class="input-group-text first-special-input-text">
+								          			<i class="fa fa-calendar-alt"></i>
+								          		</div>
+							        		</div>
+								        	<input type="text" class="form-control first-special-input" id="datepicker-4" value="12.04.2019"/>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-1 col-12 p-0 mt-1 mt-md-0 border-left">
+					  					<div class="input-group">
+								        	<button class="form-control first-special-input pt-2" data-toggle="dropdown" aria-expanded="false">
+								        		<label class="float-left mt-2 font-weight-bold text-muted">
+								        			<i class="fa fa-user" style="color: #9e9e9e !important;"></i>
+								        			&nbsp; 4 Kişi
+								        		</label>
+								        	</button>
+								        	<div class="dropdown-menu dropdown-menu-right pt-1 pb-1 pl-2 pr-2" role="menu">
+								        		<div class="row">
+								        			<div class="col-md-12 col-12 pl-3">
+								        				<label class="font-small text-muted">
+								        					Yetişkin (12+)
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="4" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        			<div class="col-md-12 col-12 pl-3 mb-2 mt-1">
+								        				<label class="font-small text-muted">
+								        					Çocuk (2 - 11)
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="0" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        			<div class="col-md-12 col-12 pl-3 mb-2 mt-1">
+								        				<label class="font-small text-muted">
+								        					Bebek (0 - 2)
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="0" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        			<div class="col-md-12 col-12 pl-3 mb-2 mt-1">
+								        				<label class="font-small text-muted">
+								        					Genç (12- 24)
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="0" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        			<div class="col-md-12 col-12 pl-3 mb-2 mt-1">
+								        				<label class="font-small text-muted">
+								        					Öğrenci (12 - 24)
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="0" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        			<div class="col-md-12 col-12 pl-3 mb-2 mt-1">
+								        				<label class="font-small text-muted">
+								        					Yaşlı (65+)
+								        				</label>
+								        				<div class="def-number-input number-input first-special-number-input m-0 p-0">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+														  	<input class="quantity" min="0" name="quantity" value="0" type="number">
+														  	<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+														</div>
+								        			</div>
+								        		</div>
+			                            	</div>
+								      	</div>
+					  				</div>
+					  				<div class="col-md-1 col-12 p-0 pr-2 pr-md-0 mt-1 mt-md-0 first-special-col" style="border-top-right-radius: 6px !important; border-bottom-right-radius: 6px !important;">
+					  					<button class="btn font-weight-bold first-special-button col-md-10 col-12">
+					  						 <i class="fa fa-chevron-right"></i>
+					  					</button>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+</head>
+<body>
+
+	<div class="container mt-5 mb-5">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="text-muted font-weight-bolder">ANTALYA ÇIKIŞLI KARADENİZ RÜYASI VE BATUM TURU / 5 GECE OTEL KONAKLAMASI</h4><p>
+				<span class="text-muted">OtelRezerv > 2018 Kültür Turları Son Dakika Fırsatları > Karadeniz Turları > Antalya Çıkışlı Karadeniz Batum Turu / 5 Gece Otel Konaklaması</span>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-md-9 d-inline-block">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="carousel-example-2" class="carousel slide carousel-fade first-special-carousel" data-ride="carousel">
+						  	<ol class="carousel-indicators">
+						    	<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+						    	<li data-target="#carousel-example-2" data-slide-to="1"></li>
+						    	<li data-target="#carousel-example-2" data-slide-to="2"></li>
+						    	<li data-target="#carousel-example-2" data-slide-to="3"></li>
+						    	<li data-target="#carousel-example-2" data-slide-to="4"></li>
+						    	<li data-target="#carousel-example-2" data-slide-to="5"></li>
+						  	</ol>
+						  	<div class="carousel-inner" role="listbox">
+						    	<div class="carousel-item active">
+						    		<div class="view">
+						        		<img class="d-block w-100" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-218461.jpg" alt="">
+						      		</div>
+						      		<div class="carousel-caption">
+						        		<p>Genel Görünüm</p>
+						      		</div>
+						    	</div>
+						    	<div class="carousel-item">
+						      		<div class="view">
+						        		<img class="d-block w-100" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259478.jpg" alt="">
+						      		</div>
+						      		<div class="carousel-caption">
+						        		<p>Genel Görünüm</p>
+						      		</div>
+						    	</div>
+						    	<div class="carousel-item">
+						      		<div class="view">
+						        		<img class="d-block w-100" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259482.jpg" alt="">
+						      		</div>
+						      		<div class="carousel-caption">
+						        		<p>Genel Görünüm</p>
+						      		</div>
+						    	</div>
+						    	<div class="carousel-item">
+						      		<div class="view">
+						        		<img class="d-block w-100" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259485.jpg" alt="">
+						      		</div>
+						      		<div class="carousel-caption">
+						        		<p>Genel Görünüm</p>
+						      		</div>
+						    	</div>
+						    	<div class="carousel-item">
+						      		<div class="view">
+						        		<img class="d-block w-100" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259486.jpg" alt="">
+						      		</div>
+						      		<div class="carousel-caption">
+						        		<p>Genel Görünüm</p>
+						      		</div>
+						    	</div>
+						    	<div class="carousel-item">
+						      		<div class="view">
+						        		<img class="d-block w-100" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259483.jpg" alt="">
+						      		</div>
+						      		<div class="carousel-caption">
+						        		<p>Genel Görünüm</p>
+						      		</div>
+						    	</div>
+						  	</div>
+						  	<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+						    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  	</a>
+						  	<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+						    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  	</a>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-md-12">
+						<h3 class="text-muted font-weight-bolder">Konaklama Tarihinizi Belirleyin</h3>
+					</div>
+					<div class="col-md-12 pl-1 pr-2">
+						<div class="tab-content" id="myTabContent">
+						  	<div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+						  		<div class="container pt-2 pb-2 pr-4 pl-4">
+						  			<div class="row">
+						  				<div class="col-md-3 col-6 p-0 mt-1 mt-md-0">
+						  					<label class="text-muted font-small text-uppercase">Giriş Tarihi</label>
+						  					<div class="input-group">
+									        	<div class="input-group-prepend">
+									          		<div class="input-group-text first-special-input-text">
+									          			<i class="fa fa-calendar-alt"></i>
+									          		</div>
+								        		</div>
+									        	<input type="text" class="form-control first-special-input" id="datepicker-6" value="11.04.2019"/>
+									      	</div>
+						  				</div>
+						  				<div class="col-md-3 col-6 p-0 mt-1 mt-md-0">
+						  					<label class="text-muted font-small text-uppercase">Çıkış Tarihi</label>
+						  					<div class="input-group">
+									        	<div class="input-group-prepend">
+									          		<div class="input-group-text first-special-input-text">
+									          			<i class="fa fa-calendar-alt"></i>
+									          		</div>
+								        		</div>
+									        	<input type="text" class="form-control first-special-input" id="datepicker-5" value="12.04.2019"/>
+									      	</div>
+						  				</div>
+						  				<div class="col-md-2 col-12 p-0 mt-1 mt-md-0">
+						  					<label class="text-muted font-small text-uppercase">Yetişkin Sayısı</label>
+						  					<div class="input-group">
+									        	<div class="input-group-prepend">
+									          		<div class="input-group-text first-special-input-text">
+									          			<i class="fa fa-user"></i>
+									          		</div>
+								        		</div>
+								        		<select class="form-control custom-select first-special-input">
+												  	<option selected>1 Kişi</option>
+												  	<option value="1">2 Kişi</option>
+												  	<option value="2">3 Kişi</option>
+												  	<option value="3">4 Kişi</option>
+												</select>
+									      	</div>
+						  				</div>
+						  				<div class="col-md-2 col-12 p-0 mt-1 mt-md-0">
+						  					<label class="text-muted font-small text-uppercase">Çocuk Sayısı</label>
+						  					<div class="input-group">
+									        	<div class="input-group-prepend">
+									          		<div class="input-group-text first-special-input-text">
+									          			<i class="fa fa-user"></i>
+									          		</div>
+								        		</div>
+									        	<select class="form-control custom-select first-special-input">
+												  	<option selected>1 Kişi</option>
+												  	<option value="1">2 Kişi</option>
+												  	<option value="2">3 Kişi</option>
+												  	<option value="3">4 Kişi</option>
+												</select>
+									      	</div>
+						  				</div>
+						  				<div class="col-md-2 col-12 p-0 mt-1 mt-md-0 border-bottom" style="border-top-right-radius: 6px !important; border-bottom-right-radius: 6px !important;">
+						  					<label class="text-white font-small text-uppercase">.</label>
+						  					<div class="input-group border-top border-right">
+									        	<button class="btn font-weight-bold fifth-special-button col-md-11 col-12">
+						  							Ara &nbsp; <i class="fa fa-chevron-right"></i>
+						  						</button>
+									      	</div>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-md-12">
+						<ul class="nav nav-tabs md-tabs second-special-tabs" id="myTabMD" role="tablist">
+						  	<li class="nav-item">
+						    	<a class="nav-link active" id="first-tab-md" data-toggle="tab" href="#first-md" role="tab"aria-controls="first-md" aria-selected="true">Tur Programı</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="second-tab-md" data-toggle="tab" href="#second-md" role="tab" aria-controls="second-md" aria-selected="false">Oteller / Fiyatlar</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="third-tab-md" data-toggle="tab" href="#third-md" role="tab" aria-controls="third-md" aria-selected="false">Genel Şartlar</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="fourth-tab-md" href="">Grup Talebi</a>
+						  	</li>
+						</ul>
+						<div class="tab-content card mt-3 p-3" id="myTabContentMD">
+						  	<div class="tab-pane fade show active" id="first-md" role="tabpanel" aria-labelledby="first-tab-md">
+						  		<div class="row">
+						  			<div class="col-md-12">
+						  				<h5 class="text-muted font-weight-bolder">Antalya Çıkışlı Karadeniz Rüyası ve Batum Turu / 5 Gece Otel Konaklaması</h5>
+						  			</div>
+						  			<div class="col-md-12 pl-5 mt-3">
+						  				<div class="mt-2 mb-2">
+							  				<label class="font-weight-bolder first-text-color">Ücrete Dahil Olan Hizmetler</label>
+							  				<ul class="pl-4 text-muted font-small">
+							  					<li>Otellerde 5 Gece Yarım Pansiyon Konaklama</li>
+							  					<li> Açık Büfe 5 Sabah Kahvaltısı</li>
+							  					<li>Açık Büfe veya Yöresel Yemeklerden Oluşan 5 Akşam Yemeği</li>
+							  					<li>Lüks Araçlar ile Ulaşım (kişi sayısına göre araç detayları aşağıda yer almaktadır.)</li>
+							  					<li>Milli Park Giriş Ücretleri</li>
+							  				</ul>
+							  			</div>
+							  			<div class="mt-2 mb-2">
+							  				<label class="font-small second-text-color font-weight-bolder">1.Gün : Gece Yolculuğu</label>
+							  				<p class="text-muted font-small">21.00`da Antalya 5M Migros önünden (Havaş Otobüsleri Yanı) katılan siz değerli misafirlerimizle OtelRezerv.com otobüs içi ikramlar eşliğinde gece yolculuğumuza başlıyoruz.</p>
+							  			</div>
+							  			<div class="mt-2 mb-2">
+							  				<label class="font-small second-text-color font-weight-bolder">2. Gün: Ferhat İle Şirin Su Kanalı – Gök Medrese – Arkeoloji Ve Etnografya Müzesi – II. Beyazid Kulliyesi – Şehzadeler Parkı – Yalı Boyu Evleri – Alçak Köprü – Hükümet Köprüsü – Saat Kulesi – Bandırma Vapuru – Atatürk Onur Anıtı – Terme – Fatsa</label>
+							  				<p class="text-muted font-small">Değerli Misafirlerimiz;Sabah yolda alınan serbest kahvaltı sonrasında Osmanlı Devleti’nin arka bahçelerinden olan ve Yeşilırmak’ın şekillendirdiği bu güzel şehirde ilk olarak Ferhat’ın Şirin için dağları deldiğini bilmek yetmez diyoruz ve bu aşka tanıklık etmek üzere Ferhat İle Şirin Su Kanalı’nı ziyaret ediyoruz. Bu aşk hikâyesini bir de rehberimizden dinledikten sonra Selçuklu Valilerinden Torumtay' ın yaptırdığı Gök Medrese Camii’ni panoramik olarak aracımızdan görüp, Amasya Müzesi` ne geçiyoruz. Burada Tunç Çağı, Hitit, Urartu, Frig, İskit, Pers, Helenistik, Roma, Bizans, Selçuklu ve Osmanlı dönemlerine ait arkeolojik, etnografik, sikke, mühür, el yazması gibi örnekleri ve İlhanlılar dönemine ait mumyaları görüyoruz. Ardından Osmanlı Sultanı II. Bayezid oğlu Şehzade Ahmet tarafından valilik yaptığı Amasya’ ya armağan olarak 1482–1486 arasında Mimar Şemseddin Ahmet’e yaptırılan II. Bayezid Külliyesi içerisinde bulunan camiyi gezip, kütüphane, aşevi yapılarını gördükten sonra Yeşilırmak’ın kenarında bulunan Şehzadeler Parkında yapacağımız kısa bir yürüyüşün ardından Roma döneminden kalan eserlerden hala kullanılmakta olan Alçak Köprü üzerinde fotoğraf molası veriyoruz ve Yalı Boyu evlerini en güzel noktadan fotoğraflıyoruz. Amasya Kalesi’ni ve Helenistik Dönemde bölgede hüküm sürmüş Mitridat Krallığına ait Kaya Mezarlarını panoramik fotoğrafladıktan sonra Hükümet Köprüsü ile Saat Kulesini görüyoruz. Öğle yemeğimizin ardından Havza – Kavak üzerinden meşhur Çakallı Rampasını inerek Samsun’ a ulaşıyoruz. 19 Mayıs 1919' da Ulu Önderimiz Mustafa Kemal Atatürk’ ün Kurtuluş Savaşı' nı başlatmış olduğu bu şehirde Samsun' un simgesi haline gelen, Avusturyalı Heykeltıraş H. Kriphel' e 1931 tarihinde yaptırılmış Atatürk Anıtını görüp hatıra fotoğraflarımızı çektirdikten sonra, Doğu Park alanı içinde yer alan, zorlu yolculuk sonrasında silah arkadaşlarıyla birlikte Atamızı Samsun’ a ulaştıran Bandırma Vapuru’ nu geziyor ve otelimize gitmek üzere yola çıkıyoruz. Akşam yemeği ve konaklama otelimizde.</p>
+							  				<ul class="pl-4 text-muted font-small">
+							  					<li>Sabah Kahvaltısı: Güzergâhımız üzerinde uygun bir tesiste alınacaktır. (Ekstra)</li>
+							  					<li>Öğle Yemeği: Amasya'da menü olarak alınacaktır. (Ekstra)</li>
+							  					<li>Akşam Yemeği: Otelde alınacak olup tur ücretine dahildir.</li>
+							  					<li>Güzergâh: Antalya – Amasya– Samsun – Fatsa / 1046 Km</li>
+							  					<li>Konaklama Oteli: Fatsa Yalçın Hotel Resort, Fatsa Yıldız Hotel - Samsun Hampton by Hilton Hotel, Bulancak Avcı Otel, Giresun Amazon Aretias Hotel vb.</li>
+							  				</ul>
+							  			</div>
+							  			<div class="mt-2 mb-2">
+							  				<label class="font-small second-text-color font-weight-bolder">3.Gün: Ordu – Boztepe – Giresun – Topal Osman’ın Anıt Mezarı – Giresun Kalesi – Akçaabat – Trabzon – Ayasofya Müzesi – Atatürk Köşkü – Rize – Çayeli – Rize Bezi Dokuma Atölyesi</label>
+							  				<p class="text-muted font-small">Değerli misafirlerimiz; Sabah otelimizde alacağımız kahvaltımızın ardından ülkemizin kullanılmakta olan en uzun tünellerinden biri olan Nefise AKÇELİK tünelinden (3820 m) geçip rehberimizden alacağımız bilgiler eşliğinde Ordu kentinin sembolü Boztepe’ ye teleferikle çıkma imkânı (Ekstra) bulabileceğimiz teleferik parkta serbest zaman veriyoruz. Boztepe’ de Ordu’yu ve tüm Karadeniz coğrafyasını ayaklarımızın altında hissedeceğiz. Geçireceğimiz keyifli zaman sonrasında Ordu’ dan ayrılıyoruz ve Giresun Adası’ nı ve Pontus Hükümdarı Farnakes döneminde inşa edilen Giresun Kalesi ile Ulu Önderimiz Mustafa Kemal Atatürk’ ün alay muhafızı olan Topal Osman’ ın Mezarını aracımızdan panoramik olarak görüp, fındık ve fındık ürünleri alışverişlerimizi yaptıktan sonra, meşhur Akçaabat Köftesinin tadına bakarak öğle yemeğini alıyoruz. Öğle yemeğimizin ardından Trabzon’ da Soğuksu Mevkiine çıkarken Gülbahar Hatun Camii’ ni, İç Kale ve Zağnos Vadisini (Panaromik) görüyor ve Ladin ağaçları arasından geçerek, bir Rum iş adamına ait olan ve sonrasında Trabzon halkı tarafından Atatürk` e hediye edilen Atatürk Köşkü’ nü geziyoruz. Ardından Komnenos Krallığı döneminde 1238-65 yılları arasında yapılıp, batı cephesindeki Hristiyanlık tarihine ait freskleriyle birlikte Trabzon Ayasofya'sını da geziyor ve Trabzon` a özgü bir el sanatı olan Trabzon Hasırı, Telkâri ve Trabzon'da sadece beş ailenin yaptığı Kazaziye işlerini yapan ustaların marifetli ellerinde hazırlanan ürünleri görme fırsatı bulduktan sonra alışveriş için kısa bir zaman veriyoruz. Ardından Rize üzerinden aslında çok yakından tanıdığımız Çayeli` ne geçiyoruz. Rize bezi dokuma atölyelerinden birinde vereceğimiz kısa bir alışveriş molası sonrasında otelimize varıyoruz. Akşam yemeği ve konaklama otelimizde.</p>
+							  				<ul class="pl-4 text-muted font-small">
+							  					<li>Sabah Kahvaltısı: Güzergâhımız üzerinde uygun bir tesiste alınacaktır. (Ekstra)</li>
+							  					<li>Öğle Yemeği: Amasya'da menü olarak alınacaktır. (Ekstra)</li>
+							  					<li>Akşam Yemeği: Otelde alınacak olup tur ücretine dahildir.</li>
+							  					<li>Güzergâh: Antalya – Amasya– Samsun – Fatsa / 1046 Km</li>
+							  					<li>Konaklama Oteli: Fatsa Yalçın Hotel Resort, Fatsa Yıldız Hotel - Samsun Hampton by Hilton Hotel, Bulancak Avcı Otel, Giresun Amazon Aretias Hotel vb.</li>
+							  				</ul>
+							  			</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						  	<div class="tab-pane fade" id="second-md" role="tabpanel" aria-labelledby="second-tab-md">
+						  		<div class="row">
+						  			<div class="col-md-12">
+						  				<h5 class="text-muted font-weight-bolder">Fiyat Tablosu</h5>
+						  				<div class="mt-1 mb-1">
+						  					<table class="table table-bordered">
+											  	<thead>
+											    	<tr>
+											      		<th scope="col">Dönem / Pansiyon</th>
+											      		<th scope="col">İndirim</th>
+											      		<th scope="col">2 Kişilik Oda'da Kişi Başı</th>
+											      		<th scope="col">Tek Kişilik Oda</th>
+											      		<th scope="col">İlave Yatak</th>
+											      		<th scope="col">Çocuk</th>
+											    	</tr>
+											  	</thead>
+											  	<tbody>
+											    	<tr>
+											     		<th scope="row"><label class="mt-3">21.04.2019-27.04.2019</label></th>
+											      		<td class="first-text-color"><label class="mt-2 font-weight-bolder">%40<br>İndirim</label></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td><label class="mt-3"><a href="">Detay</a></label></td>
+											    	</tr>
+											    	<tr>
+											     		<th scope="row"><label class="mt-3">21.04.2019-27.04.2019</label></th>
+											      		<td class="first-text-color"><label class="mt-2 font-weight-bolder">%40<br>İndirim</label></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td><label class="mt-3"><a href="">Detay</a></label></td>
+											    	</tr>
+											    	<tr>
+											     		<th scope="row"><label class="mt-3">21.04.2019-27.04.2019</label></th>
+											      		<td class="first-text-color"><label class="mt-2 font-weight-bolder">%40<br>İndirim</label></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td><label class="mt-3"><a href="">Detay</a></label></td>
+											    	</tr>
+											    	<tr>
+											     		<th scope="row"><label class="mt-3">21.04.2019-27.04.2019</label></th>
+											      		<td class="first-text-color"><label class="mt-2 font-weight-bolder">%40<br>İndirim</label></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td><label class="mt-3"><a href="">Detay</a></label></td>
+											    	</tr>
+											    	<tr>
+											     		<th scope="row"><label class="mt-3">21.04.2019-27.04.2019</label></th>
+											      		<td class="first-text-color"><label class="mt-2 font-weight-bolder">%40<br>İndirim</label></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td>1.249,99 TL <br><button class="btn fifth-special-button ml-0 p-1 pl-4 pr-4">Seç</button></td>
+											      		<td><label class="mt-3"><a href="">Detay</a></label></td>
+											    	</tr>
+											  	</tbody>
+											</table>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						  	<div class="tab-pane fade" id="third-md" role="tabpanel" aria-labelledby="third-tab-md">
+						  		<div class="row">
+						  			<div class="col-md-12">
+						  				<div class="mt-2 mb-2">
+						  					<h5 class="font-weight-bolder first-text-color">Ücrete Dahil Olan Hizmetler</h5>
+						  					<ul class="pl-4 text-muted font-small">
+							  					<li>Otellerde 5 Gece Yarım Pansiyon Konaklama</li>
+							  					<li>Açık Büfe 5 Sabah Kahvaltısı</li>
+							  					<li>Açık Büfe veya Yöresel Yemeklerden Oluşan 5 Akşam Yemeği</li>
+							  					<li>Lüks Araçlar ile Ulaşım (kişi sayısına göre araç detayları aşağıda yer almaktadır.)</li>
+							  					<li>Milli Park Giriş Ücretleri</li>
+							  					<li>Batum Turu</li>
+							  				</ul>
+						  				</div>
+						  				<div class="mt-2 mb-2">
+						  					<h5 class="font-weight-bolder first-text-color">Ücrete Dahil Olan Hizmetler</h5>
+						  					<ul class="pl-4 text-muted font-small">
+							  					<li>Otellerde 5 Gece Yarım Pansiyon Konaklama</li>
+							  					<li>Açık Büfe 5 Sabah Kahvaltısı</li>
+							  					<li>Açık Büfe veya Yöresel Yemeklerden Oluşan 5 Akşam Yemeği</li>
+							  					<li>Lüks Araçlar ile Ulaşım (kişi sayısına göre araç detayları aşağıda yer almaktadır.)</li>
+							  					<li>Milli Park Giriş Ücretleri</li>
+							  					<li>Batum Turu</li>
+							  				</ul>
+						  				</div>
+						  				<div class="mt-2 mb-2">
+						  					<h5 class="font-weight-bolder first-text-color">Ücrete Dahil Olan Hizmetler</h5>
+						  					<label class="font-small text-muted mt-1">Gezi Süresi hareket ve dönüş günü dâhil olmak üzere 6 Gece 7 Gün olup 5 Gece otel konaklamalıdır
+											Paket fiyatlarımız otel, ulaşım ve çevre gezilerini kapsamaktadır. Tur Paketlerinde uygulanan çocuk indirimleri iki yetişkin yanında tek bir çocuk için kullanılır. 0-6 yaş çocuklarda otel konaklamasında yatak verilmeyebilir.
+											Turumuz; rehberlik, ulaşım, konaklama ve çevre gezileri ile bir paket olup ayrı düşünülemez. Kullanılmayan ulaşım, konaklama, çevre gezileri vb. haklar geri iade edilmez.
+											Konaklama bölgelerinde ve otellerinde yoğunluğa göre aynı standartlarda olmak kaydı ile değişiklik yapılabilir.
+											Mola yerlerimiz; yoğunluk, tadilat vb. gibi mücbir sebeplerden ötürü mevki ve hizmet standartları açısından aynı olmak kaydıyla değiştirilebilir.
+											Program zamanlamasında (Gün içerisinde gezilecek ziyaret noktalarının sırasında veya günler arasında) Hava Durumu, Yol Durumu vb. gibi nedenlerle Rehber gerekli gördüğü takdirde değişiklik yapabilir.
+											Mücbir sebeplerden (hava, yol, ziyaret yerlerindeki yoğunluk vb.) veya misafirlerimizin rehberimizin verdiği zamanlamalara uymamaları sebebiyle tur programımızda yazdığı halde gezilemeyen yerlerden Tatilbudur.com kesinlikle sorumlu değildir.
+											Tur programında yer alan gece turları gibi ekstra turlar kişi sayısı ve mevcut personelin şartlarına bağlı olarak gerçekleştirilir. Yol üzerinde yapılan ekstra turlar tüm yolcuların katılımı olmasa dahi gerçekleştirilecektir. Yol üzeri yapılacak olan ekstra turlarda; tura katılmayacak olan misafirlerimiz rehberimiz tarafından şehre girmeden önce yer alan dinlenme alanlarına veya şehir merkezlerine yönlendirilecektir. Yol üzerinde yapılan ekstra turlara katılmak istemeyen yolcular, mola yerinde beklemeyi kabul ederek tura katılmışlardır. 
+											Ek Hizmet Bedelleri, Paket(ulaşım ve konaklama) fiyatın üstüne eklenerek total bir paket halinde taksitlendirilebilir. İndirimli statüsünde olan misafirlerimiz bu bedeli indirimli öderler.
+											Rezervasyon esnasında kesinlikle koltuk numarası sözü ve garantisi verilemez. Rezervasyona girilen ulaşım ve otel notlarının garantisi yoktur. 
+											Uzun turlarımızda her gün sıra atlayacak şekilde yer değişimi (Rotasyon) olmaktadır. Kısa turlarımızda rotasyon uygulanmaz. Bu uygulama en az 4 (Dört) gece konaklamalı turlarda geçerlidir.   Araçlarda bulunan 3 ve 4 numaralı koltuk rehber ve yardımcısına aittir.
+											Uçaklı Turlarımızda, Uçak ile ilgili bölümlerde havayolu sözleşmesi geçerlidir. İptal Sigortaları Uçak ulaşımını kapsamaz. Turlarımızda kademeli fiyat sistemi mevcuttur. İlan edilen fiyat en düşük sınıftan açılan fiyattır. (Uçaklı tur programlarında 'ekonomik sınıf' kullanılmaktadır.)
+											Turumuzda yeterli sayıya ulaşılamadığı takdirde; iptal hakkı tur hareket tarihinden 20 gün öncesine kadar Tatilbudur.com da saklıdır. Böyle bir iptal durumunda Tatilbudur misafirlerine bizzat haber vermekle yükümlüdür. 
+											18 yaş altı reşit sayılmayan çocukların anne veya babalarından biri veya ikisi ile beraber tura katılmadığı durumlarda, tura katılım için gerekli olan muvaffakatnamelerin seyahat sırasında kişilerin yanında bulundurulması zorunludur. 
+											Kişilerin tura katılımlarındaki sağlık sorunları, hamilelik durumu, sürekli kullanımda bulundukları ilaçlar ile ilgili raporları yanlarında bulundurmaları gerekmektedir.
+											1618 nolu zorunlu seyahat sigortası kapsamı Acentenin iflası veya herhangi bir nedenle paket tur hizmetinin verilememesini kapsar. Sağlık sigortası değildir, tedavi masraflarını karşılamaz. Özel sağlık sigortası misafire ait özel harcamadır.
+											İptal Güvence Paketi satın almış olduğunuz paket turunuzu, başlangıç tarihinden 72 saat öncesine kadar, hiçbir neden belirtmeksizin iptal edebilmenize olanak verir. İptal sonrasında ödemiş olduğunuz tur ücretinin tamamı, hiçbir kesinti yapılmadan, ödeme şeklinize göre iade yapılır.
+											Tüm Kültür turları ürünlerimizde kademeli fiyat sistemi uygulanmaktadır. Satışa sunulmuş olan paket tur içindeki rezervasyon sayısı yükseldikçe (Turun doluluk oranı arttıkça) fiyatlarda kademeli olarak yükselmektedir. Bu durumda ön ödeme almadan fiyat sabitleme yapılamamaktadır.
+											Yeterli katılım oluşmadığında en yakın hareket noktasına biletleme yapılarak misafirlerimizin tura katılımı sağlanabilir
+											Tur bitiminde varılacak saatler ile alakalı bilgiler paket programda yazdığı gibi olup, mücbir sebeplerle gelişecek gecikmelerden Tatilbudur.com sorumlu değildir. Misafirlerimiz alındığı noktalarda bırakılacaktır. 
+											Trafik Kanunu gereğince araçta bulunulan tüm seyahat sürecinde emniyet kemeri takılması zorunlu olup, aksi haldeki durumlarda Tatilbudur.com sorumluluğu yoktur.
+											Araç içerisindeki kişisel tüm eşyaların sorumluluğu mola vb. yerlerde kişiye aittir.
+											İlk gün gezi otele girmeden başlayacağından yüzme için gerekli kıyafetlerinizi ayrı bir şekilde hazırlayınız.
+											Gece Turları, Ekstralar; Tüm Gece Turları Ekstra Olup Katılıma ve Kişi Sayısına Bağlı Olarak gerçekleştirilir.</label>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-inline-block">
+				<div class="row mb-3">
+					<div class="col-md-12 mt-3 mt-md-0 p-0">
+						<div class="text-center">
+							<button type="button" class="btn fourth-special-button fsb-1 col-md-12 col-11">Rezervasyon Yap</button>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-md-12 p-md-0 mb-0">
+						<div class="card mb-0">
+							<div class="card-body p-2 text-white second-bg-color mb-0">
+								<label class="mb-0 font-weight-bolder text-white ml-2">1.207 <span class="font-small">TL'den itibaren</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-4 border p-0 second-special-row ssr-1">
+				  	<div class="col-md-6 col-6 p-0 pr-1">
+				    	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-218461.jpg" alt="" style="width: 100% !important;"/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-218461.jpg" alt="" data-toggle="modal" data-target="#modal1" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pl-1">
+				    	<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259478.jpg" alt="" style="width: 100% !important;"/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259478.jpg" alt="" data-toggle="modal" data-target="#modal2" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pr-1 mt-2">
+				    	<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259482.jpg" alt="" style="width: 100% !important;"/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259482.jpg" alt="" data-toggle="modal" data-target="#modal3" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pl-1 mt-2">
+				    	<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259485.jpg" alt="" style="width: 100% !important;"/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259485.jpg" alt="" data-toggle="modal" data-target="#modal4" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pr-1 mt-2">
+				    	<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259486.jpg" alt="" style="width: 100% !important;"/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://imagessl.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-259486.jpg" alt="" data-toggle="modal" data-target="#modal5" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pl-1 mt-2">
+				    	<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt=""/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="" data-toggle="modal" data-target="#modal2" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pr-1 mt-2">
+				    	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt=""/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="" data-toggle="modal" data-target="#modal2" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pl-1 mt-2">
+				    	<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt=""/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="" data-toggle="modal" data-target="#modal2" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pr-1 mt-2">
+				    	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt=""/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="" data-toggle="modal" data-target="#modal2" style="height: 100px !important;"></a>
+				  	</div>
+				  	<div class="col-md-6 col-6 p-0 pl-1 mt-2">
+				    	<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				      		<div class="modal-dialog modal-lg" role="document">
+				        		<div class="modal-content">
+				          			<div class="modal-body mb-0 p-0">
+				            			<img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt=""/>
+				          			</div>
+				          			<div class="modal-footer justify-content-center">
+				            			<span class="mr-4">Genel Görünüm</span>
+				          			</div>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="" data-toggle="modal" data-target="#modal2" style="height: 100px !important;"></a>
+				  	</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-md-12">
+						<div class="card second-bg-color text-white">
+							<div class="card-body p-1 pb-0">
+								<div class="text-left d-inline-block">
+									<label class="font-weight-bolder align-middle m-0 ml-2" style="margin-top: 2px !important;">Puan</label>
+								</div>
+								<div class="float-right d-inline-block">
+									<h4 class="font-weight-bold m-0 mr-2">9.0</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="alert alert-light border alert-dismissible fade show font-small mt-3" role="alert">
+				  	Şu anda bu turu <strong>76</strong> kişi inceliyor
+				  	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    	<span aria-hidden="true">&times;</span>
+				  	</button>
+				</div>
+				<div class="row mt-3">
+					<div class="col-md-12">
+						<div class="card p-2 border">
+							<div class="row">
+								<div class=	"col-md-12">
+									<label class="font-weight-bolder text-muted">Tüm Antalya Turları</label>
+								</div>
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<label class="text-muted font-small d-inline-block">Side Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+										<div class="col-md-6 col-6 pl-1">
+											<label class="text-muted font-small d-inline-block">Alanya Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mt-1">
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<label class="text-muted font-small d-inline-block">Side Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+										<div class="col-md-6 col-6 pl-1">
+											<label class="text-muted font-small d-inline-block">Alanya Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mt-1">
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<label class="text-muted font-small d-inline-block">Side Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+										<div class="col-md-6 col-6 pl-1">
+											<label class="text-muted font-small d-inline-block">Alanya Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mt-1">
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<label class="text-muted font-small d-inline-block">Side Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+										<div class="col-md-6 col-6 pl-1">
+											<label class="text-muted font-small d-inline-block">Alanya Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mt-1">
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<label class="text-muted font-small d-inline-block">Side Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+										<div class="col-md-6 col-6 pl-1">
+											<label class="text-muted font-small d-inline-block">Alanya Turları</label>
+											<i class="fa fa-chevron-right mt-1 second-text-color d-inline-block float-right"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mt-5 mb-5">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="text-muted font-weight-bolder">Benzer Turlar</h4>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-md-4 d-inline-block">
+				<div class="card first-special-card">
+				  	<img class="card-img-top" src="https://ucdn.tatilbudur.net/tur/kurban-bayrami-ozel-karadeniz-ruyasi-ve-batum-turu-5-gece-otel-konaklamasi//365x160//117578.jpg" alt="">
+				  	<div class="card-body pb-1">
+				    	<h5 class="card-title p-0 m-0"><a>KURBAN BAYRAMI ÖZEL KARADENİZ...</a></h5>
+				    	<label class="card-text p-0 m-0">7 Gün 6 Gece 09.08.2019 - 15.08.2019</label>
+				    	<hr/>
+				    	<a href="" class="first-special-card-icon float-right d-inline-block"><i class="far fa-arrow-alt-circle-right"></i></a>
+				    	<label class="float-right d-inline-block mt-2 mr-2 font-weight-bolder"><h4>2.447 TL</h4></label>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-md-4 mt-3 mt-md-0 d-inline-block">
+				<div class="card first-special-card">
+				  	<img class="card-img-top" src="https://ucdn.tatilbudur.net/tur/kurban-bayrami-ozel-karadeniz-ruyasi-ve-batum-turu-5-gece-otel-konaklamasi//365x160//117578.jpg" alt="">
+				  	<div class="card-body pb-1">
+				    	<h5 class="card-title p-0 m-0"><a>KURBAN BAYRAMI ÖZEL KARADENİZ...</a></h5>
+				    	<label class="card-text p-0 m-0">7 Gün 6 Gece 09.08.2019 - 15.08.2019</label>
+				    	<hr/>
+				    	<a href="" class="first-special-card-icon float-right d-inline-block"><i class="far fa-arrow-alt-circle-right"></i></a>
+				    	<label class="float-right d-inline-block mt-2 mr-2 font-weight-bolder"><h4>2.447 TL</h4></label>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-md-4 mt-3 mt-md-0 d-inline-block">
+				<div class="card first-special-card">
+				  	<img class="card-img-top" src="https://ucdn.tatilbudur.net/tur/kurban-bayrami-ozel-karadeniz-ruyasi-ve-batum-turu-5-gece-otel-konaklamasi//365x160//117578.jpg" alt="">
+				  	<div class="card-body pb-1">
+				    	<h5 class="card-title p-0 m-0"><a>KURBAN BAYRAMI ÖZEL KARADENİZ...</a></h5>
+				    	<label class="card-text p-0 m-0">7 Gün 6 Gece 09.08.2019 - 15.08.2019</label>
+				    	<hr/>
+				    	<a href="" class="first-special-card-icon float-right d-inline-block"><i class="far fa-arrow-alt-circle-right"></i></a>
+				    	<label class="float-right d-inline-block mt-2 mr-2 font-weight-bolder"><h4>2.447 TL</h4></label>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="page-footer font-small font-weight-bolder pt-4 footer">
+	    <div class="container text-center text-md-left">
+	      	<div class="row">
+	        	<hr class="clearfix w-100 d-md-none">
+	        	<div class="col-md-2 p-0 mx-auto">
+	          		<ul class="list-styled">
+        				<li>
+	              			<a href="#!">Alanya Otelleri</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Ankara Otelleri</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Büyükada Otelleri</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">İzmir Otelleri</a>
+	            		</li>
+	          		</ul>
+	        	</div>
+	        	<hr class="clearfix w-100 d-md-none">
+	        	<div class="col-md-2 p-0 mx-auto">
+	          		<ul class="list-styled">
+        				<li>
+	              			<a href="#!">Alanya Otelleri</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Assos Otelleri</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Çeşme Otelleri</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">İstanbul Otelleri</a>
+	            		</li>
+	          		</ul>
+	        	</div>
+	        	<hr class="clearfix w-100 d-md-none">
+	        	<div class="col-md-2 p-0 mx-auto">
+          			<ul class="list-styled">
+            			<li>
+              				<a href="#!">Alaçatı Otelleri</a>
+            			</li>
+            			<li>
+              				<a href="#!">Belek Otelleri</a>
+            			</li>
+            			<li>
+              				<a href="#!">Didim Otelleri</a>
+        				</li>
+            			<li>
+              				<a href="#!">Kapadokya Otelleri</a>
+            			</li>
+          			</ul>
+        		</div>
+        		<hr class="clearfix w-100 d-md-none">
+        		<div class="col-md-2 p-0 mx-auto">
+          			<ul class="list-styled">
+            			<li>
+              				<a href="#!">Ağva Otelleri</a>
+            			</li>
+            			<li>
+              				<a href="#!">Bodrum Otelleri</a>
+            			</li>
+            			<li>
+              				<a href="#!">Datça Otelleri</a>
+            			</li>
+            			<li>
+              				<a href="#!">Kaş Otelleri</a>
+            			</li>
+          			</ul>
+        		</div>
+      		</div>
+    	</div>
+    	<hr>
+    	<div class="container text-center text-md-left">
+	      	<div class="row">
+	        	<hr class="clearfix w-100 d-md-none">
+	        	<div class="col-md-2 p-0 mx-auto">
+	          		<ul class="list-styled">
+        				<li>
+	              			<a href="#!">Misafir İlişkileri Yardımı</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Satış Acentalarımız</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Kültür Turu</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Gemi Turu</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Tatil Fırsatları</a>
+	            		</li>
+	          		</ul>
+	        	</div>
+	        	<hr class="clearfix w-100 d-md-none">
+	        	<div class="col-md-2 p-0 mx-auto">
+	          		<ul class="list-styled">
+        				<li>
+	              			<a href="#!">Kurumsal</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">İnsan Kaynakları</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Disneyland Paris</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">The Land Of Legends</a>
+	            		</li>
+	            		<li>
+	              			<a href="#!">Hac & Umre</a>
+	            		</li>
+	          		</ul>
+	        	</div>
+	        	<hr class="clearfix w-100 d-md-none">
+	        	<div class="col-md-2 p-0 mx-auto">
+          			<ul class="list-styled">
+            			<li>
+              				<a href="#!">Şehir Oteli</a>
+            			</li>
+            			<li>
+              				<a href="#!">Bilgi Toplumu Hizmetleri</a>
+            			</li>
+            			<li>
+              				<a href="#!">Online Katalog</a>
+        				</li>
+            			<li>
+              				<a href="#!">Erken Rezervasyon</a>
+            			</li>
+            			<li>
+              				<a href="#!">Online Satış</a>
+            			</li>
+          			</ul>
+        		</div>
+        		<hr class="clearfix w-100 d-md-none">
+        		<div class="col-md-2 p-0 mx-auto">
+          			<ul class="list-styled">
+            			<li>
+              				<a href="#!">Kişisel Verilerin Korunması</a>
+            			</li>
+            			<li>
+              				<a href="#!">İletişim</a>
+            			</li>
+            			<li>
+              				<a href="#!">Şirketlere Özel</a>
+            			</li>
+            			<li>
+              				<a href="#!">Hediye Kartı</a>
+            			</li>
+            			<li>
+              				<a href="#!">Hakkımızda</a>
+            			</li>
+          			</ul>
+        		</div>
+      		</div>
+    	</div>
+    	<hr>
+    	<div class="container text-center text-md-left">
+	      	<div class="row">
+	        	<hr class="clearfix w-100 d-md-none">
+	        	<div class="col-md-6 mx-auto d-inline-block">
+	        		<div class="row">
+	        			<div  class="col-md-4 d-inline-block">
+			        		<img src="http://www.tourismtoday.net/d/news/23540.jpg" class="img-fluid mt-md-2 ml-md-5 d-inline-block" style="height: 75px; width: 125px" />
+			        	</div>
+			        	<div class="col-md-8 d-inline-block">
+			        		<label class="d-inline-block mt-md-1 third-text-color">
+			        			<strong>Telif hakkı © 2009–2019 OtelRezerv®.</strong><br>
+								OtelRezerv® OtelRezerv® Ltd'nin kayıtlı bir markasıdır. Avrupa Birliği kayıtlı marka numarası : 012136751. ‌ Her hakkı saklıdır.
+			        		</label>
+			        	</div>	
+		        	</div>
+        		</div>
+        		<div class="col-md-6 mx-auto d-inline-block">
+        			<div class="text-center">
+        				<button type="button" class="btn btn-rounded info-color-dark col-md-1 mt-3 pt-3 pl-3 pb-2" style="border-radius: 2px !important;"><h6><i class="fa fa-envelope" aria-hidden="true" style="margin-left: 2px !important;"></i></h6></button>
+		        		<button type="button" class="btn btn-rounded info-color-dark col-md-8 mt-3 pt-3 pb-2" style="border-radius: 2px !important;"><h6><i class="fa fa-phone pr-2" aria-hidden="true"></i>+90 554 675 7348</h6></button>
+		        	</div>
+        		</div>
+        	</div>
+        </div>
+    	<hr>
+	    <div class="container">
+	      	<div class="row">
+	        	<div class="col-md-12 py-5">
+	          		<div class="mb-5 flex-center">
+	            		<a class="fb-ic">
+	              			<i class="fab fa-facebook-f fa-lg mr-md-5 third-text-color mr-3 fa-2x"> </i>
+	            		</a>
+	            		<a class="tw-ic">
+	              			<i class="fab fa-twitter fa-lg mr-md-5 third-text-color mr-3 fa-2x"> </i>
+	            		</a>
+	            		<a class="gplus-ic">
+	              			<i class="fab fa-google-plus-g fa-lg third-text-color mr-md-5 mr-3 fa-2x"> </i>
+	            		</a>
+        				<a class="li-ic">
+	              			<i class="fab fa-linkedin-in fa-lg third-text-color mr-md-5 mr-3 fa-2x"> </i>
+	            		</a>
+	            		<a class="ins-ic">
+	              			<i class="fab fa-instagram fa-lg third-text-color mr-md-5 mr-3 fa-2x"> </i>
+	            		</a>
+	            		<a class="pin-ic">
+	              			<i class="fab fa-pinterest fa-lg third-text-color fa-2x"> </i>
+	            		</a>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </div>
+	    <div class="footer-copyright text-center third-text-color py-3">© 2019 Copyright:
+	      	<a href=""> OtelRezerv.com</a>
+	    </div>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		  	$('#datepicker-1').daterangepicker({
+			    singleDatePicker: true,
+			    showDropdowns: true
+		  	}, function(start, end, label) {
+			    var years = moment().diff(start, 'years');
+	  		});
+
+		  	$('#datepicker-2').daterangepicker({
+			    singleDatePicker: true,
+			    showDropdowns: true
+		  	}, function(start, end, label) {
+			    var years = moment().diff(start, 'years');
+	  		});
+
+	  		$('#datepicker-3').daterangepicker({
+			    singleDatePicker: true,
+			    showDropdowns: true
+		  	}, function(start, end, label) {
+			    var years = moment().diff(start, 'years');
+	  		});
+
+	  		$('#datepicker-4').daterangepicker({
+			    singleDatePicker: true,
+			    showDropdowns: true
+		  	}, function(start, end, label) {
+			    var years = moment().diff(start, 'years');
+	  		});
+
+		  	$('[data-toggle="popover"]').popover();
+
+		});
+
+	</script>
+
+</body>
+</html>

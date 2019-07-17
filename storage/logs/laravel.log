@@ -1,0 +1,308 @@
+[2019-06-08 06:56:54] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 06:56:54] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:01:15] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:01:15] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:01:16] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:01:16] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:04:09] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:04:09] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:06:31] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:06:31] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:07:52] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:07:52] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:10:31] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:10:31] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:11:25] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:11:25] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:12:50] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:12:50] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:24:04] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:24:04] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:26:06] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:26:06] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 07:26:07] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 07:26:07] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 14:54:46] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 14:54:46] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
+[2019-06-08 14:54:48] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Unable to load ...', Array)
+#4 /home/vagrant/code/halalhotelcheck/app/Exceptions/Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Exception))
+#5 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Exception))
+#6 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(118): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Exception))
+#7 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-06-08 14:54:48] laravel.ERROR: Unable to load the "app" configuration file. {"exception":"[object] (Exception(code: 0): Unable to load the \"app\" configuration file. at /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php:68)
+[stacktrace]
+#0 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#4 /home/vagrant/code/halalhotelcheck/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#5 /home/vagrant/code/halalhotelcheck/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#6 {main}
+"} 
