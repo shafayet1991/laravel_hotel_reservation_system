@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
         'homepage_icons',
         'room_features',
         'room_possibilities',
-        'hotel_board_types  ',
+        'hotel_board_types',
     ];
 
     public function run()
