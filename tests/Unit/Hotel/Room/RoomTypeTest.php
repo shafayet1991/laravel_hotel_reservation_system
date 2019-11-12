@@ -18,7 +18,7 @@ class RoomTypeTest extends TestCase
 
     final public function test_hotel_type_seeder()
     {
-        Artisan::call('db:seed', ['--class' => 'TestRoomTypesTableSeeder', '--database' => 'testing']);
+//        Artisan::call('db:seed', ['--class' => 'TestRoomTypesTableSeeder', '--database' => 'testing']);
         $this->assertTrue(true);
     }
 

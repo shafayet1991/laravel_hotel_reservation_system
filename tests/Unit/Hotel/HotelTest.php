@@ -20,7 +20,7 @@ class HotelTest extends TestCase
 
     final public function test_hotel_seeder()
     {
-        Artisan::call('db:seed', ['--class' => 'TestHotelsTableSeeder', '--database' => 'testing']);
+//        Artisan::call('db:seed', ['--class' => 'TestHotelsTableSeeder', '--database' => 'testing']);
         $this->assertTrue(true);
     }
 

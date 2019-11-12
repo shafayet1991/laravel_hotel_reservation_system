@@ -109,9 +109,9 @@
                                                         value="contact-template">İletişim</option>
                                                 <option {{ Helper::custom_selected_option($menu->template,"blog-template")  }}
                                                         value="blog-template">Blog</option>
-                                                {{--                                            <option {{ Helper::custom_selected_option($menu->template,"blog-template")  }}--}}
+                                                {{--                                            <option {{ LanguageHelper::custom_selected_option($menu->template,"blog-template")  }}--}}
                                                 {{--                                                    value="blog-template">Blog</option>--}}
-                                                {{--                                            <option {{ Helper::custom_selected_option($menu->template,"homepage-template")  }}--}}
+                                                {{--                                            <option {{ LanguageHelper::custom_selected_option($menu->template,"homepage-template")  }}--}}
                                                 {{--                                                    value="homepage-template">Anasayfa</option>--}}
                                             </select>
                                         </div>

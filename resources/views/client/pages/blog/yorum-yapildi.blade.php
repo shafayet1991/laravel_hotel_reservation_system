@@ -17,7 +17,7 @@
 {{--                             alt="Card image cap">--}}
 {{--                        <div class="card-body text-center">--}}
 {{--                            <label class="text-muted font-small mb-2"><i class="fa fa-user"></i> {{ $blog->author->name ?? '' }}/--}}
-{{--                                {{ Helper::custom_date_replace($blog->created_at->toDateString() ?? '','-','.') }}</label>--}}
+{{--                                {{ LanguageHelper::custom_date_replace($blog->created_at->toDateString() ?? '','-','.') }}</label>--}}
 {{--                            <h4 class="card-title"><a>{{ $blog->name ?? '' }}</a></h4>--}}
 {{--                            <p class="card-text">{{ $blog->short_description ?? '' }}</p>--}}
 {{--                            <a href="{{ route('page.blog.detail',$blog->slug ?? '') }}" class="btn btn-pink btn-rounded btn-md" style="border-radius: 20px">Devamını Oku</a>--}}

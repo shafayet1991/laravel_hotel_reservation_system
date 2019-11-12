@@ -6,7 +6,7 @@ use App\Models\System\User\User;
 
 Route::group(['namespace' => 'Admin\System','middleware' => 'auth'], function () {
 
-    Route::get('/test', function(){
+//    Route::get('/test', function(){
 
 //        auth()->user()->givePermissionTo('edit post','write post');
 //        auth()->user()->syncRole('writer');
@@ -28,7 +28,7 @@ Route::group(['namespace' => 'Admin\System','middleware' => 'auth'], function ()
 //        $role->syncPermissions($permission);
 
 
-    });
+//    });
 
     Route::group(['namespace' => 'Authority'], function () {
         Route::resource('role', 'RoleController');

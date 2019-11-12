@@ -47,11 +47,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if ($exception instanceof \ErrorException) {
-            event(new SystemErrorEvent($exception));
-            return response()->view('errors.500', [], 500);
-        } else {
+//        if ($exception instanceof \ErrorException) {
+//            event(new SystemErrorEvent($exception));
+//            return response()->view('errors.500', [], 500);
+//        } else {
             return parent::render($request, $exception);
-        }
+//        }
     }
 }

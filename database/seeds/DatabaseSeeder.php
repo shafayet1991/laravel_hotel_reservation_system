@@ -47,9 +47,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CurrenciesTableSeeder::class,
             HotelTypesTableSeeder::class,
-            CountriesTableSeeder::class,
-            CitiesTableSeeder::class,
-            CountiesTableSeeder::class,
+//            CountriesTableSeeder::class,
+//            CitiesTableSeeder::class,
+//            CountiesTableSeeder::class,
             AirportsTableSeeder::class,
             BoardTypesTableSeeder::class,
             RoomTypesTableSeeder::class,

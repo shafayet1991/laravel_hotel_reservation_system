@@ -141,7 +141,7 @@
 
 {{--                            @forelse($theme['domestic']['cities'] as $domestic)--}}
 {{--                                <div class="col-md-6 col-6 d-inline-block pr-0">--}}
-{{--                                    <a href="{{ url('search/' . $domestic['name'] . '?selection_type=1&select_id=' . $domestic['id']  . '&start_date=' . Helper::custom_carbon_today() .'&end_date=' . Helper::custom_carbon_today_after(Helper::custom_carbon_today(),5) . '&adult_count=2&child_count=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0' ) }}"--}}
+{{--                                    <a href="{{ url('search/' . $domestic['name'] . '?selection_type=1&select_id=' . $domestic['id']  . '&start_date=' . LanguageHelper::custom_carbon_today() .'&end_date=' . LanguageHelper::custom_carbon_today_after(LanguageHelper::custom_carbon_today(),5) . '&adult_count=2&child_count=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0' ) }}"--}}
 {{--                                       class="font-small d-inline-block font-weight-bolder text-muted">--}}
 {{--                                        {{ $domestic['name'] ?? '' }} Otelleri--}}
 {{--                                    </a>--}}
@@ -257,7 +257,7 @@
 {{--                            @forelse($theme['international']['cities'] as $international)--}}
 
 {{--                                <div class="col-md-6 col-6 d-inline-block pr-0">--}}
-{{--                                    <a href="{{ url('search/' . $international['name'] . '?selection_type=1&select_id=' . $international['id']  . '&start_date=' . Helper::custom_carbon_today() .'&end_date='.Helper::custom_carbon_today_after(Helper::custom_carbon_today(),5).'&adult_count=2&child_count=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0' ) }}"--}}
+{{--                                    <a href="{{ url('search/' . $international['name'] . '?selection_type=1&select_id=' . $international['id']  . '&start_date=' . LanguageHelper::custom_carbon_today() .'&end_date='.LanguageHelper::custom_carbon_today_after(LanguageHelper::custom_carbon_today(),5).'&adult_count=2&child_count=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0&child_ages%5B%5D=0' ) }}"--}}
 {{--                                       class="font-small d-inline-block font-weight-bolder text-muted">--}}
 {{--                                        {{ $international['name'] ?? '' }} Otelleri--}}
 {{--                                    </a>--}}

@@ -354,7 +354,7 @@
                     </tr>
 {{--                    <tr>--}}
 {{--                        <td>İptal Güvence Bedeli</td>--}}
-{{--                        <td>{{ Helper::custom_money($reservation->cancel_amount) ?? 0 }} ₺</td>--}}
+{{--                        <td>{{ LanguageHelper::custom_money($reservation->cancel_amount) ?? 0 }} ₺</td>--}}
 {{--                        <td>test</td>--}}
 {{--                        <td>test</td>--}}
 {{--                    </tr>--}}

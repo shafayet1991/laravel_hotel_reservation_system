@@ -21,6 +21,16 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapAuthApiRoutes();
 
         $this->mapSharedApiRoutes();
+	
+	    $this->mapAdminSystemRoutes();
+	
+	    $this->mapAdminHotelRoutes();
+	
+	    $this->mapAdminTourRoutes();
+	
+	    $this->mapAdminSettingRoutes();
+	
+	    $this->mapAdminWebRoutes();
 
         $this->mapClientRoomRoutes();
 
@@ -31,19 +41,47 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapClientWebRoutes();
 
         $this->mapCommonWebRoutes();
-
-        $this->mapAdminSystemRoutes();
-
-        $this->mapAdminHotelRoutes();
-
-        $this->mapAdminTourRoutes();
-
-        $this->mapAdminSettingRoutes();
-
-        $this->mapAdminWebRoutes();
-
-        //
     }
+	
+	protected function mapAdminWebRoutes()
+	{
+		Route::prefix('adminpanel')
+			->middleware('web')
+			->namespace($this->namespace)
+			->group(base_path('routes/Admin/web.php'));
+	}
+	
+	protected function mapAdminSystemRoutes()
+	{
+		Route::prefix('adminpanel')
+			->middleware('web')
+			->namespace($this->namespace)
+			->group(base_path('routes/Admin/system.php'));
+	}
+	
+	protected function mapAdminHotelRoutes()
+	{
+		Route::prefix('adminpanel')
+			->middleware('web')
+			->namespace($this->namespace)
+			->group(base_path('routes/Admin/hotel.php'));
+	}
+	
+	protected function mapAdminTourRoutes()
+	{
+		Route::prefix('adminpanel')
+			->middleware('web')
+			->namespace($this->namespace)
+			->group(base_path('routes/Admin/tour.php'));
+	}
+	
+	protected function mapAdminSettingRoutes()
+	{
+		Route::prefix('adminpanel')
+			->middleware('web')
+			->namespace($this->namespace)
+			->group(base_path('routes/Admin/settings.php'));
+	}
 
     protected function mapClientRoomRoutes()
     {
@@ -95,46 +133,4 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace($this->namespace)
             ->group(base_path('routes/Api/Shared/api.php'));
     }
-
-    protected function mapAdminWebRoutes()
-    {
-        Route::prefix('adminpanel')
-            ->middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/Admin/web.php'));
-    }
-
-    protected function mapAdminSystemRoutes()
-    {
-        Route::prefix('adminpanel')
-            ->middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/Admin/system.php'));
-    }
-
-    protected function mapAdminHotelRoutes()
-    {
-        Route::prefix('adminpanel')
-            ->middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/Admin/hotel.php'));
-    }
-
-    protected function mapAdminTourRoutes()
-    {
-        Route::prefix('adminpanel')
-            ->middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/Admin/tour.php'));
-    }
-
-    protected function mapAdminSettingRoutes()
-    {
-        Route::prefix('adminpanel')
-            ->middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/Admin/settings.php'));
-    }
-
-
 }

@@ -20,7 +20,7 @@ class RoomTest extends TestCase
 
     final public function test_room_seeder()
     {
-        Artisan::call('db:seed', ['--class' => 'TestRoomsTableSeeder', '--database' => 'testing']);
+//        Artisan::call('db:seed', ['--class' => 'TestRoomsTableSeeder', '--database' => 'testing']);
         $this->assertTrue(true);
     }
 
