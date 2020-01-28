@@ -415,7 +415,9 @@ class Helper
 
         $price = $amount;
 
-        Session::put('localize.usd', 80);
+        Session::put('localize.usd', 1);
+        Session::put('localize.EUR', 1.5);
+        Session::put('localize.GBP', .8);
 
         if (session('localize.currency') === 'USD')
         {
