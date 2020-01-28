@@ -19,8 +19,8 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Kategori Adı</th>
-                                <th>İşlemler</th>
+                                <th>Category Name</th>
+                                <th>Transactions</th>
                             </tr>
                             </thead>
                             <tbody>

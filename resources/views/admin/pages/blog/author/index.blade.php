@@ -6,7 +6,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 @include('admin.pages.blog.common.button')
                 <a href="{{ route('blog_author.create') }}" class="btn btn-success btn-md pull-right">
-                    <i class="fa fa-plus"></i> Blog Yazarı Ekle
+                    <i class="fa fa-plus"></i>
+                    Add Blogger
                 </a>
                 <div class="x_panel">
                     <div class="x_title">
@@ -19,12 +20,12 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Yazar Fotoğrafı</th>
-                                <th>Yazar Adı Soyadı</th>
-                                <th>Yazar Ünvanı</th>
-                                <th>Yazar Email</th>
-                                <th>Yazar Telefon</th>
-                                <th>İşlemler</th>
+                                <th> Author Photo </th>
+                                <th> Author Name Surname </th>
+                                <th> Author Title </th>
+                                <th> Author Email </th>
+                                <th> Author Phone </th>
+                                <Th> Actions </th>
                             </tr>
                             </thead>
                             <tbody>

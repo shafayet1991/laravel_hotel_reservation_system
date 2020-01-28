@@ -1,19 +1,22 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
-    | Parola hatırlatma metinleri
+    | Password Reset Language Lines
     |--------------------------------------------------------------------------
     |
-    | Aşağıdaki metinler, başarısız olmuş bir parola sıfırlama
-    | işleminde oluşan hataları temsil eden mesajlardır.
+    | The following language lines are the default lines which match reasons
+    | that are given by the password broker for a password update attempt
+    | has failed, such as for an invalid token or invalid new password.
     |
     */
 
-    'password' => 'Parolanız en az sekiz karakter olmalı ve doğrulama ile eşleşmelidir.',
-    'reset' => 'Parolanız sıfırlandı!',
-    'sent' => 'Parola sıfırlama bağlantınız e-posta ile gönderildi!',
-    'token' => 'Parola sıfırlama adresi/kodu geçersiz.',
-    'user' => 'Bu e-posta adresi ile kayıtlı bir üye bulunmuyor.',
+    'password' => 'Passwords must be at least eight characters and match the confirmation.',
+    'reset' => 'Your password has been reset!',
+    'sent' => 'We have e-mailed your password reset link!',
+    'token' => 'This password reset token is invalid.',
+    'user' => "We can't find a user with that e-mail address.",
+
 ];

@@ -3,13 +3,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <strong>Rezervasyon Sahibi</strong><br>
+                <strong>
+                    Reservation Owner</strong><br>
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
-                        <th width="10%">Adı Soyadı</th>
-                        <th width="10%">Email</th>
-                        <th width="10%">Telefon</th>
+                        <th width = "10%"> Name Surname </th>
+                        <th width = "10%"> Email </th>
+                        <th width = "10%"> Phone </th>
                     </tr>
                     </thead>
                     <tbody>
@@ -22,24 +23,24 @@
                 </table>
             </div>
             <div class="col-md-12">
-                <strong>Otel Rezervasyon Özeti</strong><br>
+                <strong>Hotel Reservation Summary</strong><br>
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
-                        <th width="10%">Rezervasyon Numarası</th>
-                        <th width="10%">Otel</th>
-                        <th width="10%">Adres</th>
-                        <th width="10%">Otel Telefon</th>
-                        <th width="10%">Otel Email</th>
-                        <th width="10%">Otel Tipi</th>
-                        <th width="10%">Oda</th>
-                        <th width="10%">Oda Tipi</th>
-                        <th width="10%">Pansiyon Tipi</th>
-                        <th width="10%">Yetişkin</th>
-                        <th width="10%">Çocuk</th>
-                        <th width="10%">Giriş Tarihi</th>
-                        <th width="10%">Çıkış Tarihi</th>
-                        <th width="10%">Gece</th>
+                        <th width = "10%"> Reservation Number </th>
+                        <th width = "10%"> Hotel </th>
+                        <th width = "10%"> Address </th>
+                        <th width = "10%"> Hotel Telephone </th>
+                        <th width = "10%"> Hotel Email </th>
+                        <th width = "10%"> Hotel Type </th>
+                        <th width = "10%"> Room </th>
+                        <th width = "10%"> Room Type </th>
+                        <th width = "10%"> Pension Type </th>
+                        <th width = "10%"> Adult </th>
+                        <th width = "10%"> Child </th>
+                        <th width = "10%"> Entry Date </th>
+                        <th width = "10%"> Release Date </th>
+                        <th width = "10%"> Night </th>
                     </tr>
                     </thead>
                     <tbody>
@@ -72,14 +73,14 @@
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
-                        <th width="10%">Durumu</th>
-                        <th width="10%">Rezervasyon Kaydı</th>
-                        <th width="10%">Yetişkin Sayısı</th>
-                        <th width="10%">Çocuk Sayısı</th>
-                        <th width="10%">Ödeme Tipi</th>
-                        <th width="10%">Ek İstekler</th>
-                        <th width="10%">Promosyon Kodu</th>
-                        <th width="10%">Ön Bilgilendirme İstiyor Mu?</th>
+                        <th width = "10%"> Status </th>
+                        <th width = "10%"> Booking Record </th>
+                        <th width = "10%"> Number of Adults </th>
+                        <th width = "10%"> Number of Children </th>
+                        <th width = "10%"> Payment Type </th>
+                        <th width = "10%"> Additional Requests </th>
+                        <th width = "10%"> Promo Code </th>
+                        <th width = "10%"> Does It Request Preliminary Information? </th>
                     </tr>
                     </thead>
                     <tbody>
@@ -99,11 +100,11 @@
             <div class="col-md-12">
                 <strong>Misafir Bilgileri</strong><br>
                 <table class="mt-2" border="0" width="100%" cellpadding="10" cellspacing="10">
-                    <th><h6><b>Türü</b></h6></th>
-                    <th><h6><b>Ad Soyad</b></h6></th>
-                    <th><h6><b>Cinsiyet</b></h6></th>
-                    <th><h6><b>Yaşlar</b></h6></th>
-                    <th><h6><b>Doğum Tarihi</b></h6></th>
+                    <th> <h6> <b> Type </b> </h6> </th>
+                    <th><h6> <b> Name Surname </b> </h6> </th>
+                    <Th> <h6> <b> Gender </b> </h6> </th>
+                    <Th> <h6> <b> Age </b> </h6> </th>
+                    <th><h6> <b> Date of Birth </b> </h6> </th>
                     @forelse($reservation->adults as $adult)
                         <tr>
                             <td><h6>Yetişkin</h6></td>
@@ -130,19 +131,20 @@
                 <strong>Ulaşım Bilgileri</strong><br>
                 @switch($reservation->is_transportation)
                     @case(0)
-                        Kullanıcı ulaşım bilgilerini girmemiştir.
+                    The user has not entered transportation information.
                     @break;
                     @case(1)
-                        Kullanıcı ulaşım bilgilerini girmemiştir.
+
+                    The user has not entered transportation information.
                     @break;
                     @case(4)
                     <table class="table table-striped table-bordered">
                         <thead>
                         <tr>
-                            <th width="10%">Transfer Nereden</th>
-                            <th width="10%">Transfer Nereye</th>
-                            <th width="10%">Transfer Türü</th>
-                            <th width="10%">Transfer Ücreti</th>
+                            <th width = "10%"> Where to Transfer </th>
+                            <th width = "10%"> Where To Transfer </th>
+                            <th width = "10%"> Transfer Type </th>
+                            <th width = "10%"> Transfer Fee </th>
                         </tr>
                         </thead>
                         <tbody>

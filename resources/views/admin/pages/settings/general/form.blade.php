@@ -6,7 +6,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Genel Ayarlar</h2>
+                        <h2>
+                            General Settings</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -17,7 +18,8 @@
                                 <input type="hidden" value="{{ $general->id ?? '' }}" name="id">
 
                                 <div class="form-group">
-                                    <label class="control-label" for="hotel_description">Rezervasyon Alanındaki Sözleşme Detayları<span class="required">*</span>
+                                    <label class="control-label" for="hotel_description">
+                                        Contract Details in the Reservation Area<span class="required">*</span>
                                     </label>
                                     <textarea id="hotel_description" class="form-control" rows="2" name="contract_detail">{{ $general->contract_detail ?? old('contract_detail') }}</textarea>
                                 </div>
@@ -31,22 +33,22 @@
                                            data-toggle="collapse"
                                            data-parent="#accordion" href="#collapseOne" aria-expanded="true"
                                            aria-controls="collapseOne">
-                                            <h4 class="panel-title">TÜRKÇE</h4>
+                                            <h4 class="panel-title">TURKISH</h4>
                                         </a>
                                         <div id="collapseOne" class="panel-collapse collapse in"
                                              role="tabpanel"
                                              aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-8">
-                                                    <label class="control-label" for="name">Türkçe Kısa Açıklama<span
+                                                    <label class="control-label" for="name">Turkish Short Description<span
                                                             class="required">*</span>
                                                     </label>
                                                     <textarea name="tr_description" rows="3"
                                                               class="form-control">{{ $general->tr_description ?? old('tr_description') }}</textarea>
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label class="control-label" for="name">Türkçe Sayfa Başlığı
-                                                        Adı<span
+                                                    <label class="control-label" for="name">
+                                                        Turkish Page Title First Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -69,16 +71,17 @@
                                              aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-8">
-                                                    <label class="control-label" for="name">İngilizce
-                                                        Kısa Açıklama<span
+                                                    <label class="control-label" for="name">
+                                                        English Short Description<span
                                                             class="required">*</span>
                                                     </label>
                                                     <textarea name="en_description" rows="3"
                                                               class="form-control">{{ $general->en_description ?? old('en_description') }}</textarea>
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label class="control-label" for="name">İngilizce Sayfa Başlığı
-                                                        Adı<span
+                                                    <label class="control-label" for="name">
+                                                        English Page Title First Name
+                                                        <span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -101,14 +104,14 @@
                                              aria-labelledby="headingThree">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-8">
-                                                    <label class="control-label" for="name">Rusça Kısa Açıklama<span
+                                                    <label class="control-label" for="name">Russian Short Description<span
                                                             class="required">*</span>
                                                     </label>
                                                     <textarea name="ru_description" rows="3"
                                                               class="form-control">{{ $general->ru_description ?? old('ru_description') }}</textarea>
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label class="control-label" for="name">Rusça Sayfa Başlığı Adı<span
+                                                    <label class="control-label" for="name">Russian Page Title Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -131,16 +134,15 @@
                                              aria-labelledby="headingFour">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-8">
-                                                    <label class="control-label" for="name">Arapça
-                                                        Kısa Açıklama<span
+                                                    <label class="control-label" for="name">Arabic Short Description<span
                                                             class="required">*</span>
                                                     </label>
                                                     <textarea name="ar_description" rows="3"
                                                               class="form-control">{{  $general->ar_description ?? old('ar_description') }}</textarea>
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label class="control-label" for="name">Arapça Sayfa Başlığı
-                                                        Adı<span
+                                                    <label class="control-label" for="name">
+                                                        Arabic Page Title Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -165,7 +167,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Kaydet</button>
+                                    <button type="submit" class="btn btn-success">Save</button>
                                 </div>
                             </form>
                         </div>

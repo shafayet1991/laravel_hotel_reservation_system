@@ -7,13 +7,13 @@
         <div class="col-md-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-bars"></i> Yeni Bir Otel Oluştur<small></small></h2>
+                    <h2><i class="fa fa-bars"></i> Create a New Hotel<small></small></h2>
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
                         <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="false">Genel Bilgiler</a>
+                            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="false">General Information</a>
                             </li>
                         </ul>
                         <div id="myTabContent" class="tab-content">
@@ -23,27 +23,27 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label class="control-label" for="slugconvert">Otel Adı <span class="required">*</span>
+                                                <label class="control-label" for="slugconvert">Hotel Name <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="slugconvert" value="{{ old('name') }}" name="name"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="slug">URL Yapılandırması<span class="required">*</span>
+                                                <label class="control-label" for="slug">URL Configuration<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="slug" value="{{ $hotel->slug ?? old('slug') }}" name="slug"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="hotel_description">Hotel Açıklama<span class="required">*</span>
+                                                <label class="control-label" for="hotel_description">Hotel Description<span class="required">*</span>
                                                 </label>
                                                 <textarea id="hotel_description" class="form-control" rows="2" name="hotel_description"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="cancel_description">İptal Açıklaması<span class="required">*</span>
+                                                <label class="control-label" for="cancel_description">Cancellation Description<span class="required">*</span>
                                                 </label>
                                                 <textarea id="cancel_description" class="form-control" rows="2" name="cancel_description"></textarea>
                                             </div>
 {{--                                            <div class="form-group">--}}
-{{--                                                <label class="control-label" for="hotel_type_id">Otel Tipi<span class="required">*</span>--}}
+{{--                                                <label class="control-label" for="hotel_type_id">Hotel Type<span class="required">*</span>--}}
 {{--                                                </label>--}}
 {{--                                                <select multiple class="form-control" name="hotel_type_id[]" required>--}}
 {{--                                                    <option disabled>Seçin</option>--}}
@@ -53,17 +53,17 @@
 {{--                                                </select>--}}
 {{--                                            </div>--}}
                                             <div class="form-group">
-                                                <label class="control-label" for="phone">Otel Telefon <span class="required">*</span>
+                                                <label class="control-label" for="phone">Hotel Telephone <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="phone" name="phone"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="phone">Adres <span class="required">*</span>
+                                                <label class="control-label" for="phone">Address <span class="required">*</span>
                                                 </label>
                                                 <textarea class="form-control" rows="2" name="address"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="restaurant_distance">Otelin Yıldız Sayısı (Max 5)<span class="required">*</span>
+                                                <label class="control-label" for="restaurant_distance">Star Number of the Hotel (Max 5)<span class="required">*</span>
                                                 </label>
                                                 <input type="number" id="start" maxlength="5"
                                                        name="star"
@@ -73,45 +73,45 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label class="control-label" for="commission_rate">Komisyon Oranı (% Yüzdelik)<span class="required">*</span>
+                                                <label class="control-label" for="commission_rate">Commission Rate (% Percentage)<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="commission_rate" name="commission_rate"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="country_id">Ülke<span class="required">*</span>
+                                                <label class="control-label" for="country_id">Country<span class="required">*</span>
                                                 </label>
+                                                countries: {{$countries}}
                                                 <select class="form-control" id="country_id" name="country_id">
-                                                    <option disabled>Seçin</option>
-                                                    @forelse($countries as $country)
+                                                    <option disabled>Select</option>
+                                                    @foreach($countries as $country)
                                                         <option {{ Helper::custom_selected_option($country->sortname ?? '',$hotel->country->sortname ?? '') }} value="{{$country->id}}">{{$country->name}}</option>
-                                                    @empty
-                                                    @endforelse
+                                                    @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group" id="city_div" style="display:none;">
-                                                <label class="control-label" for="city_id">il<span class="required">*</span>
+                                                <label class="control-label" for="city_id">province<span class="required">*</span>
                                                 </label>
                                                 <select class="form-control" id="city_id" name="city_id">
                                                 </select>
                                             </div>
                                             <div class="form-group" id="county_div" style="display:none;">
-                                                <label class="control-label" for="county_id">ilçe<span class="required">*</span>
+                                                <label class="control-label" for="county_id">district<span class="required">*</span>
                                                 </label>
                                                 <select class="form-control" name="county_id" id="county_id">
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="airport_id">Hava Limanı<span class="required">*</span>
+                                                <label class="control-label" for="airport_id">Airport<span class="required">*</span>
                                                 </label>
                                                 <select class="form-control" name="airport_id" required>
-                                                    <option disabled>Seçin</option>
+                                                    <option disabled>Select</option>
                                                     @foreach($airports as $airport)
                                                         <option value="{{$airport->id}}">{{$airport->name}}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="email">Otel Mail <span class="required">*</span>
+                                                <label class="control-label" for="email">Hotel Mail <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="email" name="email"  class="form-control">
                                             </div>
@@ -121,33 +121,33 @@
                                                 <input type="text" id="checkout_time" name="checkout_time"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="min_day">En Az Gün <span class="required">*</span>
+                                                <label class="control-label" for="min_day">Minimum Days <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="min_day" name="min_day"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="ops_day">Ops. Gün <span class="required">*</span>
+                                                <label class="control-label" for="ops_day">Ops. Day <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="ops_day" name="ops_day"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="airport_distance">Havaalanı Mesafesi<span class="required">*</span>
+                                                <label class="control-label" for="airport_distance">Airport Distance<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="airport_distance" name="airport_distance"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="sea_distance">Deniz Mesafesi<span class="required">*</span>
+                                                <label class="control-label" for="sea_distance">Sea Distance<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="sea_distance" name="sea_distance"  class="form-control">
                                             </div>
 
                                             <div class="form-group">
-                                                <label class="control-label" for="restaurant_distance">Restaurant Mesafesi<span class="required">*</span>
+                                                <label class="control-label" for="restaurant_distance">Restaurant Distance<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="restaurant_distance" name="restaurant_distance"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="restaurant_distance">Otelin Kampanyası<span class="required">*</span>
+                                                <label class="control-label" for="restaurant_distance">Hotel Campaign<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="campaign"
                                                        name="campaign"
@@ -155,7 +155,7 @@
                                                        class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="hotel_board_type_id">Otel Pansiyon Tipi<span class="required">*</span>
+                                                <label class="control-label" for="hotel_board_type_id">Hotel Pension Type<span class="required">*</span>
                                                 </label>
                                                 <select class="form-control" name="hotel_board_type_id">
                                                     <option disabled>Seçin</option>
@@ -166,7 +166,7 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="currency_id">Para Birimi<span class="required">*</span>
+                                                <label class="control-label" for="currency_id">Currency unit<span class="required">*</span>
                                                 </label>
                                                 <select class="form-control" name="currency_id">
                                                     <option disabled>Seçin</option>
@@ -179,62 +179,63 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label class="control-label" for="latitude">Enlem <span class="required">*</span>
+                                                <label class="control-label" for="latitude">Latitude <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="latitude" name="latitude"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="longitude">Boylam <span class="required">*</span>
+                                                <label class="control-label" for="longitude">Longitude <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="longitude" name="longitude"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="season_date">Sezon Tarihi <span class="required">*</span>
+                                                <label class="control-label" for="season_date">Season Date <span class="required">*</span>
                                                 </label>
                                                 <input type="text" class="form-control date" id="season_date" name="season_date" autocomplete="false">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="authorized_full_name">Yetkili<span class="required">*</span>
+                                                <label class="control-label" for="authorized_full_name">Authorized<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="authorized_full_name" name="authorized_full_name"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="authorized_phone">Yetkili Telefon <span class="required">*</span>
+                                                <label class="control-label" for="authorized_phone">Authorized Phone <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="authorized_phone" name="authorized_phone"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="authorized_email">Yetkili Mail <span class="required">*</span>
+                                                <label class="control-label" for="authorized_email">Authorized Mail <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="authorized_email" name="authorized_email"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="shop_distance">Market Mesafesi<span class="required">*</span>
+                                                <label class="control-label" for="shop_distance">Market Distance<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="shop_distance" name="shop_distance"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="hospital_distance">Hastane Mesafesi<span class="required">*</span>
+                                                <label class="control-label" for="hospital_distance">Hospital Distance<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="hospital_distance" name="hospital_distance"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="center_distance">Merkez Mesafesi<span class="required">*</span>
+                                                <label class="control-label" for="center_distance">Center Distance<span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="center_distance" name="center_distance"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="baby_age_limit">Bebek Yaş Sınırı<span class="required"> (Kontrat hesaplaması için gereklidir ve zorunlu alandır.) *</span>
+                                                <label class="control-label" for="baby_age_limit">Baby Age Limit<span class="required"> (
+Required and required field for contract calculation.) *</span>
                                                 </label>
                                                 <input type="text" id="baby_age_limit" value="{{ old('baby_age_limit') }}" name="baby_age_limit"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="child_age_limit">Çocuk Yaş Sınırı<span class="required"> (Kontrat hesaplaması için için gereklidir ve zorunlu alandır.) *</span>
+                                                <label class="control-label" for="child_age_limit">Child Age Limit<span class="required"> (Required and required field for contract calculation.) *</span>
                                                 </label>
                                                 <input type="text" id="child_age_limit" value="{{ old('child_age_limit') }}" name="child_age_limit"  class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="young_age_limit">Genç Yaş Sınırı<span class="required"> (Kontrat hesaplaması için için gereklidir ve zorunlu alandır.) *</span>
+                                                <label class="control-label" for="young_age_limit">Young Age Limit<span class="required"> (Required and required field for contract calculation.) *</span>
                                                 </label>
                                                 <input type="text" id="young_age_limit" value="{{ old('young_age_limit') }}" name="young_age_limit"  class="form-control">
                                             </div>
@@ -244,7 +245,7 @@
                                     <div class="ln_solid"></div>
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn btn-success">Kaydet</button>
+                                            <button type="submit" class="btn btn-success">Save</button>
                                         </div>
                                     </div>
 

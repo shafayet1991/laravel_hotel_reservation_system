@@ -18,11 +18,11 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Fotoğraf</th>
-                                <th>Adı Soyadı</th>
-                                <th>Email</th>
-                                <th>Telefon</th>
-                                <th>İşlemler</th>
+                                <Th> Photos </th>
+                                <th> Name Surname </th>
+                                <Th> email </th>
+                                <Th> Phone </th>
+                                <Th> Actions </th>
                             </tr>
                             </thead>
                             <tbody>

@@ -6,9 +6,10 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Kullanıcı Parolası Değiştir</h2>
+                        <h2>
+                            Change User Password</h2>
                         <a href="{{ route('user_setting.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Sistem Kullanıcıları Listesine Dön
+                            <i class="fa fa-undo"></i> Return to System Users List
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -19,21 +20,24 @@
                                 @csrf
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="name">Eski Şifre<span
+                                        <label class="control-label" for="name">
+                                            Old password<span
                                                 class="required">*</span>
                                         </label>
                                         <input type="password" class="form-control"
                                                value="{{ old('current_password') }}" name="current_password">
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label" for="name">Yeni Şifre<span
+                                        <label class="control-label" for="name">
+                                            new password<span
                                                 class="required">*</span>
                                         </label>
                                         <input type="password" class="form-control"
                                                value="{{ old('password') }}" name="password">
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label" for="name">Yeni Şifreyi Onayla<span
+                                        <label class="control-label" for="name">
+                                            Confirm New Password<span
                                                 class="required">*</span>
                                         </label>
                                         <input type="password" class="form-control"
@@ -43,7 +47,7 @@
                                 </div>
                                 <br>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Kaydet</button>
+                                    <button type="submit" class="btn btn-success">Save</button>
                                 </div>
 
                             </form>

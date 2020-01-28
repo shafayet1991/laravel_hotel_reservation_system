@@ -19,13 +19,12 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Resim</th>
-                                <th>Blog Adı</th>
-                                <th>Blog Yazarı</th>
-{{--                                <th>Görüntülenme</th>--}}
-                                <th>Blog Kategorileri</th>
-                                <th>Blog Etiketleri</th>
-                                <th>İşlemler</th>
+                                <Th> No </th>
+                                <th> Blog Name </th>
+                                <th> Blogger </th>
+                                <th> Blog Categories </th>
+                                <th> Blog Tags </th>
+                                <Th> Actions </th>
                             </tr>
                             </thead>
                             <tbody>

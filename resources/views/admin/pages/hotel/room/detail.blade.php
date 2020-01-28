@@ -8,7 +8,7 @@
                 <div class="x_panel">
                     <div class="x_title">
                         <a href="{{ route('hotel_room.edit',$room->id )}}"
-                           class="btn btn-primary btn-md"><i class="fa fa-arrow-circle-left"></i> Oda Düzenle
+                           class="btn btn-primary btn-md"><i class="fa fa-arrow-circle-left"></i> Edit Room
                         </a>
 
                         <div class="clearfix"></div>
@@ -16,7 +16,7 @@
                     <div class="x_content">
                         <h4>
                             <strong style="font-size:17px">{{ Helper::custom_where_am_i($names) }}</strong>
-                            adlı yeri inceliyorsunuz şu anda.
+                            You are currently reviewing.
                         </h4>
                         <div class="ln_solid"></div>
                         <form class="form-horizontal" method="POST"
@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="control-label" for="adult_count">Yetişkin<span
+                                        <label class="control-label" for="adult_count">Adult<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="adult_count" name="adult_count" class="form-control"
@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="control-label" for="first_range_count">1.Çocuk<span
+                                        <label class="control-label" for="first_range_count">1.Child<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="first_range_count" name="first_range_count"
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="control-label" for="second_range_count">2.Çocuk<span
+                                        <label class="control-label" for="second_range_count">2.Child<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="second_range_count" name="second_range_count"
@@ -55,7 +55,7 @@
                                 @if(!is_null($room->hotel->third_child_limit))
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            <label class="control-label" for="third_range_count">3.Çocuk<span
+                                            <label class="control-label" for="third_range_count">3.Child<span
                                                         class="required">*</span>
                                             </label>
                                             <input type="text" id="third_range_count" name="third_range_count"
@@ -65,7 +65,7 @@
                                 @endif
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label class="control-label" for="total_percentage">Çarpan<span
+                                        <label class="control-label" for="total_percentage">Multiplier<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="total_percentage" name="total_percentage"
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <button type="submit" class="btn btn-success" style="margin-top: 22px;">Kaydet
+                                    <button type="submit" class="btn btn-success" style="margin-top: 22px;">Save
                                     </button>
                                 </div>
                             </div>
@@ -85,10 +85,10 @@
                                     <thead>
                                     <tr>
                                         <th>Yetişkin</th>
-                                        <th>0 - {{ $hotel->first_child_limit ?? '' }} Çocuk</th>
-                                        <th>{{ ceil($hotel->first_child_limit) ?? '' }} - {{ $hotel->second_child_limit ?? '' }} Çocuk</th>
+                                        <th>0 - {{ $hotel->first_child_limit ?? '' }} Child</th>
+                                        <th>{{ ceil($hotel->first_child_limit) ?? '' }} - {{ $hotel->second_child_limit ?? '' }} Child</th>
                                         @if(!is_null($room->hotel->third_child_limit))
-                                            <th>{{ ceil($hotel->second_child_limit) ?? '' }} - {{ $hotel->third_child_limit ?? '' }} Çocuk</th>
+                                            <th>{{ ceil($hotel->second_child_limit) ?? '' }} - {{ $hotel->third_child_limit ?? '' }} Child</th>
                                         @endif
                                         <th>Çarpan</th>
                                         <th>İşlemler</th>
@@ -106,7 +106,7 @@
                                             <th>{{$detail->total_percentage}}</th>
                                             <th>
                                                 <a class="btn btn-info btn-xs" href="{{ route('room_person_detail.edit',[$room->id,$detail->id]) }}">
-                                                    <i class="fa fa-pencil" title="Kontrat Düzenle"></i>
+                                                    <i class="fa fa-pencil" title="Edit Contract"></i>
                                                 </a>
                                             </th>
                                         </tr>

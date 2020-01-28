@@ -6,9 +6,9 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Yeni Bir Anasayfa İkonu Oluştur</h2>
+                        <h2>Create a New Home Icon</h2>
                         <a href="{{ route('payment_type.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Geri Dön
+                            <i class="fa fa-undo"></i> Turn back
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -19,7 +19,7 @@
                                 @csrf
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label class="control-label" for="icon">Ödeme Yöntemi<span
+                                        <label class="control-label" for="icon">Payment method<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" class="form-control"
@@ -28,17 +28,17 @@
                                     <div class="form-group col-md-6">
                                         <label for="method">Metod</label>
                                         <select id="method" name="method" class="form-control">
-                                            <option value="agency_payment">Acentada Ödeme Metodu</option>
-                                            <option value="transfer_payment">Banka Havalesi Ödeme Metodu</option>
-                                            <option value="card_payment">Kredi Kartı Ödeme Metodu</option>
-                                            <option value="hotel_payment">Otelde Ödeme Metodu</option>
-                                            <option value="mail_payment">Mail Gönderme Ödeme Metodu</option>
+                                            <option value="agency_payment">Payment Method in Agency</option>
+                                            <option value="transfer_payment">Bank Transfer Payment Method</option>
+                                            <option value="card_payment">Credit Card Payment Method</option>
+                                            <option value="hotel_payment">Payment Method at the Hotel</option>
+                                            <option value="mail_payment">Mail Sending Payment Method</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-success">Kaydet</button>
+                                        <button type="submit" class="btn btn-success">Save</button>
                                     </div>
                                 </div>
                             </form>

@@ -8,7 +8,7 @@
                     <div class="x_title">
                         @include('admin.pages.hotel.common.button')
                         <a href="{{ route('room_feature.create')}}" class="pull-right btn btn-success btn-xs">
-                            <i class="fa fa-plus"></i> Yeni Ekle
+                            <i class="fa fa-plus"></i> Add New
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -16,8 +16,8 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Oda Özellik Adı</th>
-                                <th>Kısa Hali</th>
+                                <th>Room Feature Name</th>
+                                <th>Short version</th>
                             </tr>
                             </thead>
                             <tbody>

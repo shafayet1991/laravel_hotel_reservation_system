@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <a href="{{ route('menu.create') }}" class="btn btn-success btn-md pull-right">
-                    <i class="fa fa-plus"></i> Menü Ekle
+                    <i class="fa fa-plus"></i> Add Menu
                 </a>
                 <div class="x_panel">
                     <div class="x_title">
@@ -18,18 +18,18 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>URL Yapılandırması</th>
+                                <th>URL Configuration</th>
                                 <th>Menü Türkçe Adı</th>
-                                <th>Menü Şablonu</th>
-{{--                                <th>Menü Konumu</th>--}}
-{{--                                <th>Menü Sırası</th>--}}
-                                <th>İşlemler</th>
+                                <th>Menu Turkish Name</th>
+{{--                                <th>Menu Location</th>--}}
+{{--                                <th>Menu Order</th>--}}
+                                <th>Transactions</th>
                             </tr>
                             </thead>
                             <tbody>
                             @forelse($menus as $row)
                                 <tr>
-                                    <td>{{ $row->slug ?? '' }} => <a href="{{ url($row->slug ?? '') }}" target="_blank">Sayfaya Git</a></td>
+                                    <td>{{ $row->slug ?? '' }} => <a href="{{ url($row->slug ?? '') }}" target="_blank">Go to Pages</a></td>
                                     <td><a href="{{ url($row->slug ?? '') }}" target="_blank">{{ $row->tr_name ?? '' }}</a></td>
                                     <td>{{ $row->theme ?? '' }}</td>
 {{--                                    <td>{{ $row->getTopMenuName($row->top_id) }}</td>--}}

@@ -20,6 +20,8 @@ class HomeController extends Controller
 
     public function index()
     {
+        //return "HERE";
+
         $menus = $this->get_client_menus();
         $general = $this->get_general_settings();
         $socials = $this->get_social_media_settings();

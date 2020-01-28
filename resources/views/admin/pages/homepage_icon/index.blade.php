@@ -5,11 +5,11 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <a href="{{ route('homepage_icon.create') }}" class="btn btn-success btn-md pull-right">
-                    <i class="fa fa-plus"></i> Yeni Ekle
+                    <i class="fa fa-plus"></i> Add New
                 </a>
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Anasayfa İkonları
+                        <h2>Home Icons
                             <small>({{ count($icons) ?? 0 }})</small>
                         </h2>
                         <div class="clearfix"></div>
@@ -18,9 +18,9 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>İkon Adı</th>
-                                <th>İkon Başlığı</th>
-                                <th>İşlemler</th>
+                                <th>Icon Name</th>
+                                <th>Icon Title</th>
+                                <th>Transactions</th>
                             </tr>
                             </thead>
                             <tbody>

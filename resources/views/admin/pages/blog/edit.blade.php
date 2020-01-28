@@ -6,9 +6,10 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Blog Düzenle</h2>
+                        <h2>
+                            Edit Blog</h2>
                         <a href="{{ route('blog.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Blog Listesine Dön
+                            <i class="fa fa-undo"></i> Return to Blog List
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -21,14 +22,15 @@
                                 <input type="hidden" value="{{ $blog->id ?? 0 }}" name="blog_id">
                                 <div class="row">
                                     <div class="form-group col-md-4">
-                                        <label class="control-label" for="slugconvert">Blog Adı <span
+                                        <label class="control-label" for="slugconvert">
+                                            Blog Name <span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="slugconvert" name="name"
                                                class="form-control" value="{{ $blog->name ?? old('name') }}">
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label class="control-label" for="slug">URL Yapılandırması<span class="required">*</span>
+                                        <label class="control-label" for="slug">URL Configuration<span class="required">*</span>
                                         </label>
                                         <input type="text" id="slug" value="{{ $blog->slug ?? old('slug') }}" name="slug"  class="form-control">
                                     </div>
@@ -37,7 +39,8 @@
                                             <img src="{{ asset($blog->file ?? '') }}" width="100">
                                         @endif
                                             <br>
-                                        <label class="control-label">Blog Resmi<span class="required">*</span>
+                                        <label class="control-label">
+                                            Blog Image<span class="required">*</span>
                                         </label>
                                         <input type="file" name="photo">
                                     </div>
@@ -56,7 +59,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group col-md-5">
-                                        <label class="control-label">Blog Kategorileri<span
+                                        <label class="control-label">Blog Categories<span
                                                     class="required">*</span>
                                         </label>
                                         <select class="select4" multiple="multiple" name="blog_category_id[]">
@@ -68,7 +71,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group col-md-5">
-                                        <label class="control-label">Blog Etiketleri<span
+                                        <label class="control-label">Blog Labels<span
                                                     class="required">*</span>
                                         </label>
                                         <select class="select4" multiple="multiple" name="blog_tag_id[]">
@@ -83,7 +86,7 @@
                                 <div class="row">
                                     <div class="form-group">
                                         <label class="control-label" for="short_description">
-                                            Kısa Açıklama<span class="required"> (Sadece blog listeleme sayfasında gösterilir. Birkaç cümlede özetlemeye çalışınız.)</span>
+                                            Short Description<span class="required"> (It is only shown on the blog listing page. Try to summarize in a few sentences.)</span>
                                         </label>
                                         <textarea class="form-control" rows="2"
                                                   name="short_description">{{ $blog->short_description ?? old('short_description') }}</textarea>
@@ -92,7 +95,7 @@
                                 <div class="row">
                                     <div class="form-group">
                                         <label class="control-label" for="description">
-                                            İçerik<span class="required">*</span>
+                                            Content<span class="required">*</span>
                                         </label>
                                         <textarea class="form-control" id="description" rows="2"
                                                   name="description">{{ $blog->description ?? old('description') }}</textarea>
@@ -100,21 +103,22 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-4">
-                                        <label class="control-label" for="page_title">Sayfa Başlığı<span
+                                        <label class="control-label" for="page_title">
+                                            Page Title<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="page_title" name="page_title"
                                                class="form-control" value="{{ $blog->seo->page_title ?? old('page_title') }}">
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label class="control-label" for="seo_title">Seo Başlığı<span
+                                        <label class="control-label" for="seo_title">Seo Title<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="seo_title" name="seo_title"
                                                class="form-control" value="{{ $blog->seo->seo_title ?? old('seo_title') }}">
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label class="control-label" for="seo_keyword">Seo Anahtar Sözcükler<span
+                                        <label class="control-label" for="seo_keyword">Seo Keywords<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" id="seo_keyword" name="seo_keyword"
@@ -124,14 +128,14 @@
                                 <div class="row">
                                     <div class="form-group">
                                         <label class="control-label" for="seo_description">
-                                            Seo Açıklaması<span class="required">*</span>
+                                            Seo Description<span class="required">*</span>
                                         </label>
                                         <textarea class="form-control" rows="2"
                                                   name="seo_description">{{ $blog->seo->seo_description ?? old('seo_description') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
                         </div>

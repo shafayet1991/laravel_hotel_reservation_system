@@ -82,57 +82,57 @@
                     <div class="menu_section">
                         <h3></h3>
                         <ul class="nav side-menu">
-                            <li><a target="_blank" href="{{url('/')}}"><i class="fa fa-home"></i> Siteye Git</a></li>
-                            <li><a href="{{url('/adminpanel/dashboard')}}"><i class="fa fa-home"></i> Ana Sayfa </a></li>
-                            <li><a><i class="fa fa-edit"></i> Sayfa Yönetimi<span class="fa fa-chevron-down"></span></a>
+                            <li><a target="_blank" href="{{url('/')}}"><i class="fa fa-home"></i> Home</a></li>
+                            <li><a href="{{url('/adminpanel/dashboard')}}"><i class="fa fa-home"></i> Dashboard </a></li>
+                            <li><a><i class="fa fa-edit"></i> Page Management<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="{{ route('menu.index')}}"> Menüler </a></li>
-                                    <li><a href="{{ route('static_page.index')}}"> Sabit Sayfalar</a></li>
-                                    <li><a href="{{ route('hotel_type.create')}}"> Anasayfa Otelleri</a></li>
-                                    <li><a href="{{ route('homepage_icon.index')}}"> Anasayfa İkonları</a></li>
+                                    <li><a href="{{ route('menu.index')}}"> Menu </a></li>
+                                    <li><a href="{{ route('static_page.index')}}"> Static Page</a></li>
+                                    <li><a href="{{ route('hotel_type.create')}}">Create Hotel Type</a></li>
+                                    <li><a href="{{ route('homepage_icon.index')}}"> Homepage Icon</a></li>
                                     <li><a href="{{ route('blog.index')}}"> Blog</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-edit"></i> Hizmet Tanım <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-edit"></i> Service Description <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="{{url('/adminpanel/hotel')}}"> Otel Liste </a></li>
-                                    <li><a href="{{url('/adminpanel/hotel/create')}}"> Otel Oluştur </a></li>
-                                    <li><a href="{{url('/adminpanel/tour')}}"> Tur Liste </a></li>
-                                    <li><a href="{{url('/adminpanel/tour/create')}}"> Tur Oluştur </a></li>
+                                    <li><a href="{{url('/adminpanel/hotel')}}"> Hotel List </a></li>
+                                    <li><a href="{{url('/adminpanel/hotel/create')}}"> Create Hotel </a></li>
+                                    <li><a href="{{url('/adminpanel/tour')}}"> Tour List </a></li>
+                                    <li><a href="{{url('/adminpanel/tour/create')}}"> Create Tour </a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a>
-                                    <i class="fa fa-edit"></i> Satış İşlemleri
+                                    <i class="fa fa-edit"></i> Sales Transactions
                                     <span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="nav child_menu">
                                     <li>
-                                        <a href="{{url('/adminpanel/reservation')}}"> Gelen Rezervasyonlar</a>
+                                        <a href="{{url('/adminpanel/reservation')}}"> Incoming Reservations</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('subscribe.index') }}"> Kazanılan Aboneler</a>
+                                        <a href="{{ route('subscribe.index') }}"> Subscribers Earned</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('call_request.index') }}"> Arama İstekleri</a>
+                                        <a href="{{ route('call_request.index') }}"> Search Requests</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('contact_customer.index') }}"> Müşteri Bildirimleri</a>
+                                        <a href="{{ route('contact_customer.index') }}"> Customer Notifications</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a>
-                                    <i class="fa fa-edit"></i> Genel Bilgiler
+                                    <i class="fa fa-edit"></i> General Information
                                     <span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="nav child_menu">
                                     <li>
-                                        <a href="{{ route('admin.pages.settings.general') }}"> <i class="fa fa-cog"></i> Genel Ayarlar</a>
-                                        <a href="{{ route('social_media_setting.index') }}"> <i class="fa fa-facebook"></i> Sosyal Medya Ayarları</a>
-                                        <a href="{{ route('user_setting.index') }}"> <i class="fa fa--users"></i > Sistem Kullanıcıları</a>
-                                        <a href="{{ route('role.index') }}"> <i class="fa fa--users"></i > Kullanıcı Rütbeleri</a>
-                                        <a href="{{ route('permission.index') }}"> <i class="fa fa--users"></i > Rütbe Yetkileri</a>
+                                        <a href="{{ route('admin.pages.settings.general') }}"> <i class="fa fa-cog"></i> General Settings</a>
+                                        <a href="{{ route('social_media_setting.index') }}"> <i class="fa fa-facebook"></i> Social Media Settings</a>
+                                        <a href="{{ route('user_setting.index') }}"> <i class="fa fa--users"></i > System Users</a>
+                                        <a href="{{ route('role.index') }}"> <i class="fa fa--users"></i > User Ranks</a>
+                                        <a href="{{ route('permission.index') }}"> <i class="fa fa--users"></i > Rank Powers</a>
                                     </li>
                                 </ul>
                             </li>

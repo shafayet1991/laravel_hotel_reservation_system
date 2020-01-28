@@ -6,7 +6,7 @@
             <section class="login_content">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <h1>Giriş Formu</h1>
+                    <h1>Login Form</h1>
                     <div>
                         <input type="text" name="email" class="form-control" placeholder="Email Adresi" required="" />
                         @error('email')
@@ -19,13 +19,13 @@
                         <input type="password" name="password" class="form-control" placeholder="Şifre" required="" />
                         @error('password')
                         <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                            <strong>{{ $message }}</strong>
+                        </span>
                         @enderror
                     </div>
                     <div>
                         <button type="submit" class="btn btn-default">
-                            {{ __('Giriş Yap') }}
+                            {{ __('Login Here') }}
                         </button>
                         @if (Route::has('password.request'))
                             <a style="margin-top:-0px!important" class="btn btn-default reset_pass" href="{{ route('password.request') }}">

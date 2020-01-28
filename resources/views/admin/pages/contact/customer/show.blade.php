@@ -6,12 +6,12 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_content">
-                        Müşteri Adı : {{ $customer->name ?? '' }} <br>
-                        Müşteri Email : {{ $customer->email ?? '' }} <br>
-                        Konu : {{ $customer->subject ?? '' }} <br>
-                        Mesaj : {{ $customer->message ?? '' }} <br>
-                        IP Adresi : {{ $customer->ip_address ?? '' }} <br>
-                        Kullanıcının Tarayıcı Bilgileri : {{ $customer->user_agent ?? '' }} <br>
+                        Customer name : {{ $customer->name ?? '' }} <br>
+                        Customer Email : {{ $customer->email ?? '' }} <br>
+                        Topic : {{ $customer->subject ?? '' }} <br>
+                        Message : {{ $customer->message ?? '' }} <br>
+                        IP Address : {{ $customer->ip_address ?? '' }} <br>
+                        User's Browser Information : {{ $customer->user_agent ?? '' }} <br>
                     </div>
                 </div>
             </div>

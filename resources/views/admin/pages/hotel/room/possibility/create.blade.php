@@ -6,9 +6,9 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Oda Olanak Oluştur</h2>
+                        <h2>Create Room Opportunity</h2>
                         <a href="{{ route('room_feature.index') }}" class="btn btn-info pull-right">
-                            <i class="fa fa-undo"></i> Oda Özellikleri Listesine Dön</a>
+                            <i class="fa fa-undo"></i> Return to Room Features List</a>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -16,14 +16,14 @@
                             @csrf
                             <div class="col-md-12">
                                 <div class="form-group col-md-3">
-                                    <label class="control-label" for="name">Oda Olanak Adı
+                                    <label class="control-label" for="name">Room Facility Name
                                         <span class="required">*</span>
                                     </label>
                                     <input type="text" id="name" value="{{ old('name') }}" name="name" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-success">Kaydet</button>
+                                <button type="submit" class="btn btn-success">Save</button>
                             </div>
                         </form>
                     </div>

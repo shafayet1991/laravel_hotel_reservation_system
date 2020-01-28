@@ -6,9 +6,10 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Sabit Sayfa Düzenle</h2>
+                        <h2>
+                            Edit Fixed Page</h2>
                         <a href="{{ route('static_page.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Sabit Sayfalar Listesine Dön
+                            <i class="fa fa-undo"></i> Return to Fixed Pages List
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -19,7 +20,8 @@
                                 @csrf
                                 @method('PUT')
                                 <div class="form-group">
-                                    <label class="control-label" for="menu_id">Menü Adı
+                                    <label class="control-label" for="menu_id">
+                                        Menu Name
                                         <span class="required">*</span>
                                     </label>
                                     <select class="form-control" name="menu_id">
@@ -38,14 +40,15 @@
                                            data-toggle="collapse"
                                            data-parent="#accordion" href="#collapseOne" aria-expanded="true"
                                            aria-controls="collapseOne">
-                                            <h4 class="panel-title">TÜRKÇE</h4>
+                                            <h4 class="panel-title">TURKISH</h4>
                                         </a>
                                         <div id="collapseOne" class="panel-collapse collapse in"
                                              role="tabpanel"
                                              aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-12">
-                                                    <label class="control-label" for="name">Türkçe Açıklama<span
+                                                    <label class="control-label" for="name">TURKISH Description
+                                                        <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <textarea name="tr_description" id="editor_tr"
@@ -67,7 +70,8 @@
                                              aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-12">
-                                                    <label class="control-label" for="name">İngilizce Açıklama<span
+                                                    <label class="control-label" for="name">English Description
+                                                        <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <textarea name="en_description" id="editor_en"
@@ -89,7 +93,8 @@
                                              aria-labelledby="headingThree">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-12">
-                                                    <label class="control-label" for="name">Rusça Açıklama<span
+                                                    <label class="control-label" for="name">Russian Description
+                                                        <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <textarea name="ru_description" id="editor_ru"
@@ -111,7 +116,8 @@
                                              aria-labelledby="headingFour">
                                             <div class="panel-body">
                                                 <div class="form-group col-md-12">
-                                                    <label class="control-label" for="name">Arapça Açıklama<span
+                                                    <label class="control-label" for="name">Arabic Description
+                                                        <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <textarea name="ar_description" id="editor_ar"
@@ -125,7 +131,7 @@
 
                                 <br>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Kaydet</button>
+                                    <button type="submit" class="btn btn-success">Save</button>
                                 </div>
                             </form>
                         </div>

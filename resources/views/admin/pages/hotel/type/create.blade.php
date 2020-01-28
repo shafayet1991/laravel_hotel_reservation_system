@@ -7,7 +7,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Otel Tipleri</h2>
+                        <h2>Hotel Types</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -15,7 +15,7 @@
                             @csrf
                             <div class="row">
                                 <div class="col-md-2">
-                                    <label class="control-label">Sizin İçin Seçtiğimiz Oteller</label>
+                                    <label class="control-label">Hotels We Choose For You</label>
                                 </div>
                                 <div class="col-md-10">
                                     <div class="form-group">
@@ -38,7 +38,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <label class="control-label">Şehir Otelleri</label>
+                                    <label class="control-label">City Hotels</label>
                                 </div>
                                 <div class="col-md-10">
                                     <div class="form-group">
@@ -61,7 +61,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <label class="control-label">Termal Oteller</label>
+                                    <label class="control-label">
+                                        Thermal Hotels</label>
                                 </div>
                                 <div class="col-md-10">
                                     <div class="form-group">
@@ -84,7 +85,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <label class="control-label">Villalar</label>
+                                    <label class="control-label">villas</label>
                                 </div>
                                 <div class="col-md-10">
                                     <div class="form-group">
@@ -106,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-success">Kaydet</button>
+                                <button type="submit" class="btn btn-success">Save</button>
                             </div>
                         </form>
                     </div>

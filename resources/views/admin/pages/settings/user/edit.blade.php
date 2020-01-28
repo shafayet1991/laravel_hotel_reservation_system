@@ -6,9 +6,10 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Sistem Kullanıcısını Düzenle</h2>
+                        <h2>
+                            Edit System User</h2>
                         <a href="{{ route('user_setting.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Sistem Kullanıcıları Listesine Dön
+                            <i class="fa fa-undo"></i> Return to System Users List
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -22,7 +23,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="name">Adı Soyadı<span
+                                        <label class="control-label" for="name">
+                                            Name and surname<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" class="form-control"
@@ -38,7 +40,8 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="name">Telefon Numarası<span
+                                        <label class="control-label" for="name">
+                                            Phone number<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="text" class="form-control"
@@ -47,7 +50,8 @@
                                     <div class="form-group">
                                         <img src="{{ asset($user->file) }}" width="200">
                                         <br>
-                                        <label class="control-label" for="name">Fotoğraf<span
+                                        <label class="control-label" for="name">
+                                            Photo<span
                                                     class="required">*</span>
                                         </label>
                                         <input type="file" name="photo">
@@ -56,7 +60,8 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label">Rütbe<span
+                                        <label class="control-label">
+                                            Rank<span
                                                     class="required">*</span>
                                         </label>
                                         <select class="form-control" name="role_id[]">
@@ -70,7 +75,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-success">Kaydet</button>
+                                        <button type="submit" class="btn btn-success">Save</button>
                                     </div>
                                 </div>
                             </div>

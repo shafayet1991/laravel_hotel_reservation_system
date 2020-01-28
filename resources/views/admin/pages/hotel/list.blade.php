@@ -11,7 +11,8 @@
                     <div class="x_title">
                         @include('admin.pages.hotel.common.button')
                         <a href="{{ route('hotel.create')}}" class="pull-right btn btn-success btn-xs">
-                            <i class="fa fa-plus"></i> Otel Ekle
+                            <i class="fa fa-plus"></i>
+                            Add Hotel
                         </a>
                         <div class="clearfix"></div>
                     </div>

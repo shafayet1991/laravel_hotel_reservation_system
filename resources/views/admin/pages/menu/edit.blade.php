@@ -7,9 +7,9 @@
                 <div class="x_panel">
                     <div class="x_title">
                         <h2><strong style="font-size:17px">{{ Helper::custom_where_am_i($names) }}</strong>
-                            adlı menünün bilgilerini düzenleme sayfasındasınız şu anda.</h2>
+                        You are currently on the edit page for menu information.</h2>
                         <a href="{{ route('menu.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Menüler Listesine Dön
+                            <i class="fa fa-undo"></i> Return to Menus List
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -25,13 +25,13 @@
                                     <div class="col-md-4">
                                         <ul class="nav nav-tabs tabs-left">
                                             <li class="active"><a href="#turkish"
-                                                                  data-toggle="tab">TÜRKÇE</a>
+                                                                  data-toggle="tab">TURKISH</a>
                                             </li>
-                                            <li><a href="#english" data-toggle="tab">İNGİLİZCE</a>
+                                            <li><a href="#english" data-toggle="tab">ENGLISH</a>
                                             </li>
-                                            <li><a href="#russian" data-toggle="tab">RUSÇA</a>
+                                            <li><a href="#russian" data-toggle="tab">RUSSIAN</a>
                                             </li>
-                                            <li><a href="#arabic" data-toggle="tab">ARAPÇA</a>
+                                            <li><a href="#arabic" data-toggle="tab">ARABIC</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -39,8 +39,7 @@
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="turkish">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Türkçe
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">Turkish Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -49,8 +48,7 @@
                                             </div>
                                             <div class="tab-pane" id="english">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">İngilizce
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">English Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -59,8 +57,7 @@
                                             </div>
                                             <div class="tab-pane" id="russian">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Rusça
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">Russian Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -69,8 +66,7 @@
                                             </div>
                                             <div class="tab-pane" id="arabic">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Arapça
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">Arabic Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -83,11 +79,11 @@
                                 <div class="col-md-8">
                                     <div class="row">
                                         <div class="form-group col-md-3">
-                                            <label class="control-label" for="room_type_id">Üst Menü<span
+                                            <label class="control-label" for="room_type_id">Top Menu<span
                                                         class="required">*</span>
                                             </label>
                                             <select class="form-control" name="top_id">
-                                                <option {{ Helper::custom_selected_option($menu->id,0) }} value="0">Üst Menü</option>
+                                                <option {{ Helper::custom_selected_option($menu->id,0) }} value="0">Top Menu</option>
                                                 {{--                                            @forelse($menus as $top)--}}
                                                 {{--                                                <option value="{{ $top->id ?? '' }}">{{ $top->textTrans('name') ?? ''}}</option>--}}
                                                 {{--                                            @empty--}}
@@ -95,18 +91,18 @@
                                             </select>
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="control-label" for="room_type_id">Menü Teması<span
+                                            <label class="control-label" for="room_type_id">Menu Theme<span
                                                         class="required">*</span>
                                             </label>
                                             <select class="form-control" name="template">
                                                 <option {{ Helper::custom_selected_option($menu->template,"staticpage-template")  }}
-                                                        value="staticpage-template">Sabit Sayfa</option>
+                                                        value="staticpage-template">Fixed Page</option>
                                                 <option {{ Helper::custom_selected_option($menu->template,"hotel-template")  }}
-                                                        value="hotel-template">Hotel Şablonu</option>
+                                                        value="hotel-template">Hotel Template</option>
                                                 <option {{ Helper::custom_selected_option($menu->template,"tour-template")  }}
-                                                        value="tour-template">Tur Şablonu</option>
+                                                        value="tour-template">Tour Template</option>
                                                 <option {{ Helper::custom_selected_option($menu->template,"contact-template")  }}
-                                                        value="contact-template">İletişim</option>
+                                                        value="contact-template">Contact</option>
                                                 <option {{ Helper::custom_selected_option($menu->template,"blog-template")  }}
                                                         value="blog-template">Blog</option>
                                                 {{--                                            <option {{ LanguageHelper::custom_selected_option($menu->template,"blog-template")  }}--}}
@@ -116,7 +112,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="control-label" for="slug">URL Yapılandırması
+                                            <label class="control-label" for="slug">URL Configuration
                                                 <span class="required">*</span>
                                             </label>
                                             <input type="text"  value="{{ $menu->slug ?? '' }}" id="slug" name="slug" class="form-control">
@@ -124,21 +120,21 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-4">
-                                            <label class="control-label" for="page_title">Sayfa Başlığı<span
+                                            <label class="control-label" for="page_title">Page Title<span
                                                         class="required">*</span>
                                             </label>
                                             <input type="text" id="page_title" name="page_title"
                                                    class="form-control" value="{{ $menu->seo->page_title ?? old('page_title') }}">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="control-label" for="seo_title">Seo Başlığı<span
+                                            <label class="control-label" for="seo_title">Seo Title<span
                                                         class="required">*</span>
                                             </label>
                                             <input type="text" id="seo_title" name="seo_title"
                                                    class="form-control" value="{{ $menu->seo->seo_title ?? old('seo_title') }}">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="control-label" for="seo_keyword">Seo Anahtar Sözcükler<span
+                                            <label class="control-label" for="seo_keyword">Seo Keywords<span
                                                         class="required">*</span>
                                             </label>
                                             <input type="text" id="seo_keyword" name="seo_keyword"
@@ -148,7 +144,7 @@
                                     <div class="row">
                                         <div class="form-group">
                                             <label class="control-label" for="seo_description">
-                                                Seo Açıklaması<span class="required">*</span>
+                                            Seo Description<span class="required">*</span>
                                             </label>
                                             <textarea class="form-control" rows="2"
                                                       name="seo_description">{{ $menu->seo->seo_description ?? old('seo_description') }}</textarea>
@@ -156,11 +152,11 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-success">Kaydet</button>
+                                            <button type="submit" class="btn btn-success">Save</button>
                                         </div>
                                     </div>
 {{--                                    <div class="form-group col-md-3">--}}
-{{--                                        <label class="control-label" for="name">Menü Sıralaması<span--}}
+{{--                                        <label class="control-label" for="name">Menu Ranking<span--}}
 {{--                                                class="required">*</span>--}}
 {{--                                        </label>--}}
 {{--                                        <input type="text" class="form-control"--}}

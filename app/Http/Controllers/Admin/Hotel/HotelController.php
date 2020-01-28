@@ -43,6 +43,8 @@ class HotelController extends Controller
         $hotel_board_types = HotelBoardType::all();
         $hotel_types = HotelType::all();
 
+        //return $countries;
+
         return view('admin.pages.hotel.create', compact('airports', 'currencies', 'countries', 'hotel_board_types', 'hotel_types'));
     }
 

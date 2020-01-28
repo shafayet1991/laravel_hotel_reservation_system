@@ -4,13 +4,13 @@
         <div class="col-sm-10 offset-sm-1">
             <h4>
                 <strong style="font-size:17px">{{ Helper::custom_where_am_i($names) }}</strong>
-                adlı yerin galeri bölümünü inceliyorsunuz şu anda.
+                You are currently viewing the gallery section.
             </h4>
             <a href="{{url('/adminpanel/hotel/'.$room->hotel->id.'/edit?tab=rooms')}}" class="pull-right btn btn-primary btn-md">
                 <i class="fa fa-arrow-circle-left"></i>
-                {{ $names['hotel_name'] }} Adlı Otele Dönüş
+                {{ $names['hotel_name'] }} Return to the Hotel
             </a>
-            <h2 class="page-heading">Yüklenen resimler <span id="counter"></span></h2>
+            <h2 class="page-heading">Uploaded images <span id="counter"></span></h2>
             <form method="post" action="{{ route('room.gallery.multiple',$room->id) }}"
                   enctype="multipart/form-data" class="dropzone" id="my-dropzone">
                 @csrf
@@ -84,7 +84,7 @@
                 <div class="dz-message">
                     <div class="col-xs-8">
                         <div class="message">
-                            <p>Dosyaları buraya sürükle yada yüklemek icin tıklayın</p>
+                            <p>Click to drag or upload files here</p>
                         </div>
                     </div>
                 </div>

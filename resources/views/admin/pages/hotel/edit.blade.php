@@ -14,7 +14,7 @@
                     <div class="x_title">
                         <h2><i class="fa fa-bars"></i>
                             <strong style="font-size:17px">{{ Helper::custom_where_am_i($names) }}</strong>
-                            adlı yeri inceliyorsunuz şu anda.
+                            You are currently reviewing.
                         </h2>
                         <div class="clearfix"></div>
                     </div>
@@ -24,27 +24,29 @@
                                 <li role="presentation"
                                     class="{{ app('request')->input('tab') == 'general_information' ? 'active' : '' }}">
                                     <a href="#general_information" id="home-tab" role="tab" data-toggle="tab"
-                                       aria-expanded="false">Genel Bilgiler</a>
+                                       aria-expanded="false">
+General Information</a>
                                 </li>
                                 <li role="presentation"
                                     class="{{ app('request')->input('tab') == 'photos' ? 'active' : '' }}"><a
                                             href="#photos" role="tab" id="profile-tab" data-toggle="tab"
-                                            aria-expanded="false">Resimler</a>
+                                            aria-expanded="false">Photos</a>
                                 </li>
                                 <li role="presentation"
                                     class="{{ app('request')->input('tab') == 'rooms' ? 'active' : '' }}"><a
                                             href="#rooms" role="tab" id="profile-tab3" data-toggle="tab"
-                                            aria-expanded="true">Odalar</a>
+                                            aria-expanded="true">Rooms</a>
                                 </li>
                                 <li role="presentation"
                                     class="{{ app('request')->input('tab') == 'facilities' ? 'active' : '' }}"><a
                                             href="#facilities" role="tab" id="profile-tab4" data-toggle="tab"
-                                            aria-expanded="true">Özellikler</a>
+                                            aria-expanded="true">Features</a>
                                 </li>
                                 <li role="presentation"
                                     class="{{ app('request')->input('tab') == 'general_setting' ? 'active' : '' }}"><a
                                             href="#general_setting" role="tab" id="profile-tab5" data-toggle="tab"
-                                            aria-expanded="true">Bitir</a>
+                                            aria-expanded="true">
+Finish it</a>
                                 </li>
                             </ul>
                             <div id="myTabContent" class="tab-content">
@@ -58,7 +60,7 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="slugconvert">Otel Adı <span
+                                                    <label class="control-label" for="slugconvert">Hotel Name <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="slugconvert" name="name"
@@ -66,32 +68,32 @@
                                                 </div>
                                                 <input type="hidden" value="{{ $hotel->id }}" name="hotel_id">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="slug">URL Yapılandırması<span class="required">*</span>
+                                                    <label class="control-label" for="slug">URL Configuration<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="slug" value="{{ $hotel->slug ?? old('slug') }}" name="slug"  class="form-control">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="hotel_description">Hotel
-                                                        Açıklama<span class="required">*</span>
+                                                    Explanation<span class="required">*</span>
                                                     </label>
                                                     <textarea class="form-control" id="hotel_description" rows="2"
                                                               name="hotel_description">{{ $hotel->hotel_description ?? old('hotel_description') }}</textarea>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="cancel_description">İptal
-                                                        Açıklaması<span class="required">*</span>
+                                                    <label class="control-label" for="cancel_description">Cancellation Description<span class="required">*</span>
                                                     </label>
                                                     <textarea id="cancel_description" class="form-control" rows="2"
                                                               name="cancel_description">{{ $hotel->cancel_description ?? old('cancel_description') }}</textarea>
                                                 </div>
 
 {{--                                                <div class="form-group">--}}
-{{--                                                    <label class="control-label" for="hotel_type_id">Otel Tipi<span--}}
+{{--                                                    <label class="control-label" for="hotel_type_id">
+Hotel Type<span--}}
 {{--                                                                class="required">*</span>--}}
 {{--                                                    </label>--}}
 {{--                                                    <select multiple class="form-control" name="hotel_type_id[]"--}}
 {{--                                                            required>--}}
-{{--                                                        <option value="0" disabled>Seçin</option>--}}
+{{--                                                        <option value="0" disabled>select</option>--}}
 {{--                                                        @forelse($hotel_types as $type)--}}
 {{--                                                            <option value="{{$type->id}}" {{ in_array($type->id,$hotel_type_ids) ? "selected" : null }}>{{$type->name}}</option>--}}
 {{--                                                        @empty--}}
@@ -100,22 +102,21 @@
 {{--                                                </div>--}}
 
                                                 <div class="form-group">
-                                                    <label class="control-label" for="phone">Otel Telefon <span
+                                                    <label class="control-label" for="phone">Hotel Telephone <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="phone" name="phone"
                                                            class="form-control" value="{{$hotel->phone}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="address">Adres <span
+                                                    <label class="control-label" for="address">Address <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <textarea class="form-control" rows="2"
                                                               name="address">{{ $hotel->address }}</textarea>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="restaurant_distance">Otelin Yıldız
-                                                        Sayısı (Max 5)<span class="required">*</span>
+                                                    <label class="control-label" for="restaurant_distance">Star Number of the Hotel (Max 5)<span class="required">*</span>
                                                     </label>
                                                     <input type="number" id="start" maxlength="5"
                                                            name="star"
@@ -125,15 +126,15 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="commission_rate">Komisyon Oranı (%
-                                                        Yüzdelik)<span class="required">*</span>
+                                                    <label class="control-label" for="commission_rate">
+Commission Rate (% Percentage)<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="commission_rate"
                                                            value="{{ $hotel->commission_rate ?? '' }}"
                                                            name="commission_rate" class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="country_id">Ülke<span
+                                                    <label class="control-label" for="country_id">Country<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <select class="form-control" id="country_id" name="country_id">
@@ -145,7 +146,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="city_id">Il<span class="required">*</span>
+                                                    <label class="control-label" for="city_id">Province<span class="required">*</span>
                                                     </label>
                                                     <select class="form-control" id="city_id" name="city_id">
                                                         {{--                                                        <option value="0" disabled>Seçin</option>--}}
@@ -158,7 +159,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="county_id">Ilçe<span
+                                                    <label class="control-label" for="county_id">District<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <select class="form-control" name="county_id" id="county_id">
@@ -171,18 +172,18 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="airport_id">Hava Limanı<span
+                                                    <label class="control-label" for="airport_id">Airport<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <select class="form-control" name="airport_id" required>
-                                                        <option disabled>Seçin</option>
+                                                        <option disabled>Select</option>
                                                         @foreach($airports as $airport)
                                                             <option value="{{$airport->id}}" {{$hotel->airport_id == $airport->id ? "selected":''}}>{{$airport->name}}</option>
                                                         @endforeach
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="email">Otel Mail <span
+                                                    <label class="control-label" for="email">Hotel Mail <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="email" name="email"
@@ -197,29 +198,28 @@
                                                            value="{{$hotel->checkout_time}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="min_day">En Az Gün <span
+                                                    <label class="control-label" for="min_day">Minimum Days <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="min_day" name="min_day"
                                                            class="form-control" value="{{$hotel->min_day}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="ops_day">Ops. Gün <span
+                                                    <label class="control-label" for="ops_day">Ops. Day <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="ops_day" name="ops_day"
                                                            class="form-control" value="{{$hotel->ops_day}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="airport_distance">Havaalanı
-                                                        Mesafesi<span class="required">*</span>
+                                                    <label class="control-label" for="airport_distance">Airport Distance<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="airport_distance" name="airport_distance"
                                                            value="{{$hotel->airport_distance ?? ''}}"
                                                            class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="sea_distance">Deniz Mesafesi<span
+                                                    <label class="control-label" for="sea_distance">Sea Distance<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="sea_distance" name="sea_distance"
@@ -229,7 +229,7 @@
 
                                                 <div class="form-group">
                                                     <label class="control-label" for="restaurant_distance">Restaurant
-                                                        Mesafesi<span class="required">*</span>
+                                                        Distance<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="restaurant_distance"
                                                            name="restaurant_distance"
@@ -238,8 +238,7 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label class="control-label" for="restaurant_distance">Otelin
-                                                        Kampanyası<span class="required">*</span>
+                                                    <label class="control-label" for="restaurant_distance">Hotel Campaign<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="campaign"
                                                            name="campaign"
@@ -247,8 +246,7 @@
                                                            class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="hotel_board_type_id">Otel Pansiyon
-                                                        Tipi<span class="required">*</span>
+                                                    <label class="control-label" for="hotel_board_type_id">Hotel Pension Type<span class="required">*</span>
                                                     </label>
                                                     <select class="form-control" name="hotel_board_type_id">
                                                         @forelse($hotel_board_types as $board_type)
@@ -258,7 +256,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="currency_id">Para Birimi<span
+                                                    <label class="control-label" for="currency_id">Currency unit<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <select class="form-control" name="currency_id" required>
@@ -271,14 +269,14 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="latitude">Enlem <span
+                                                    <label class="control-label" for="latitude">Latitude <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="latitude" name="latitude"
                                                            class="form-control" value="{{$hotel->latitude}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="longitude">Boylam <span
+                                                    <label class="control-label" for="longitude">Longitude <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="longitude" name="longitude"
@@ -286,14 +284,14 @@
                                                            value="{{$hotel->longitude}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="season_date">Sezon Tarihi <span
+                                                    <label class="control-label" for="season_date">Season Date <span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control date" id="season_date"
                                                            name="season_date" value="{{$hotel->season_date}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="authorized_full_name">Yetkili<span
+                                                    <label class="control-label" for="authorized_full_name">Authorized<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="authorized_full_name"
@@ -302,7 +300,7 @@
                                                            value="{{$hotel->authorized_full_name}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="authorized_phone">Yetkili Telefon
+                                                    <label class="control-label" for="authorized_phone">Authorized Phone
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="authorized_phone" name="authorized_phone"
@@ -310,7 +308,7 @@
                                                            value="{{$hotel->authorized_phone}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="authorized_email">Yetkili Mail
+                                                    <label class="control-label" for="authorized_email">Authorized Mail
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="authorized_email" name="authorized_email"
@@ -318,16 +316,14 @@
                                                            value="{{$hotel->authorized_email}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="shop_distance">Market
-                                                        Mesafesi<span class="required">*</span>
+                                                    <label class="control-label" for="shop_distance">Market Distance<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="shop_distance" name="shop_distance"
                                                            class="form-control"
                                                            value="{{$hotel->shop_distance ?? ''}}">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="hospital_distance">Hastane
-                                                        Mesafesi<span class="required">*</span>
+                                                    <label class="control-label" for="hospital_distance">Hospital Distance<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="hospital_distance" name="hospital_distance"
 
@@ -335,16 +331,15 @@
                                                            class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="center_distance">Merkez
-                                                        Mesafesi<span class="required">*</span>
+                                                    <label class="control-label" for="center_distance">Center Distance<span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="center_distance" name="center_distance"
                                                            value="{{$hotel->center_distance ?? ''}}"
                                                            class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="baby_age_limit">Bebek Yaş Sınırı
-                                                        <span class="required"> (Kontrat hesaplaması için gereklidir ve zorunlu alandır.) *</span>
+                                                    <label class="control-label" for="baby_age_limit">Baby Age Limit
+                                                        <span class="required"> (It is necessary and necessary field for contract calculation) *</span>
                                                     </label>
                                                     <input value="{{$hotel->baby_age_limit ?? ''}}" type="text"
                                                            id="baby_age_limit" name="baby_age_limit"
@@ -352,7 +347,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="child_age_limit">Çocuk Yaş Sınırı
-                                                        <span class="required"> (Kontrat hesaplaması için gereklidir ve zorunlu alandır.) *</span>
+                                                        <span class="required"> (It is necessary and necessary field for contract calculation.) *</span>
                                                     </label>
                                                     <input value="{{$hotel->child_age_limit ?? ''}}" type="text"
                                                            id="child_age_limit" name="child_age_limit"
@@ -360,7 +355,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="young_age_limit">Genç Yaş Sınırı
-                                                        <span class="required"> (Kontrat hesaplaması için gereklidir ve zorunlu alandır.) *</span>
+                                                        <span class="required"> (Required and required field for contract calculation.) *</span>
                                                     </label>
                                                     <input value="{{$hotel->young_age_limit ?? ''}}" type="text"
                                                            id="young_age_limit" name="young_age_limit"
@@ -371,7 +366,7 @@
                                         <div class="ln_solid"></div>
                                         <div class="form-group">
                                             <div class="col-md-12">
-                                                <button type="submit" class="btn btn-success">Kaydet</button>
+                                                <button type="submit" class="btn btn-success">Save</button>
                                             </div>
                                         </div>
 
@@ -382,7 +377,7 @@
                                      id="photos" aria-labelledby="profile-tab">
                                     <div class="row">
                                         <div class="col-sm-10 offset-sm-1">
-                                            <h2 class="page-heading">Yüklenen resimler <span id="counter"></span></h2>
+                                            <h2 class="page-heading">Uploaded images <span id="counter"></span></h2>
                                             <form method="post" action="{{ url('/adminpanel/hotel_add_file') }}"
                                                   enctype="multipart/form-data" class="dropzone" id="my-dropzone">
                                                 {{ csrf_field() }}
@@ -449,14 +444,14 @@
                                                                 </svg>
                                                             </div>
                                                             <a class="dz-remove" href="javascript:undefined;"
-                                                               data-dz-remove="">Sil</a>
+                                                               data-dz-remove="">Clear</a>
                                                         </div>
                                                     @endforeach
                                                 @endif
                                                 <div class="dz-message">
                                                     <div class="col-xs-8">
                                                         <div class="message">
-                                                            <p>Dosyaları buraya sürükle yada yüklemek icin tıklayın</p>
+                                                            <p>Click to drag or upload files here</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -532,8 +527,7 @@
                                      id="rooms" aria-labelledby="profile-tab">
                                     <h4>
                                         <strong style="font-size:17px">{{ Helper::custom_where_am_i($names) }}</strong>
-                                        için
-                                        yeni bir oda oluştur.
+                                        Create a new room for.
                                     </h4>
                                     <div class="ln_solid"></div>
                                     <form class="form-horizontal" method="POST"
@@ -543,7 +537,7 @@
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="room_type_id">Oda Tipi<span
+                                                    <label class="control-label" for="room_type_id">Room type<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <select class="form-control" name="room_type_id">
@@ -555,7 +549,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Oda Adı
+                                                    <label class="control-label" for="name">Room Name
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="name" name="name"
@@ -564,7 +558,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="code">Oda Kodu
+                                                    <label class="control-label" for="code">Room Code
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="code" name="code"
@@ -573,7 +567,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="count">Oda Sayısı<span
+                                                    <label class="control-label" for="count">Number of rooms<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="count" name="count"
@@ -582,8 +576,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="min_adult_count">Minimum Yetişkin
-                                                        Sayısı<span
+                                                    <label class="control-label" for="min_adult_count">Minimum Adults<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="min_adult_count" name="min_adult_count"
@@ -592,8 +585,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="max_adult_count">Maximum Yetişkin
-                                                        Sayısı<span
+                                                    <label class="control-label" for="max_adult_count">Maximum Number of Adults<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="max_adult_count" name="max_adult_count"
@@ -602,8 +594,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="min_baby_count">Minimum Bebek
-                                                        Sayısı<span
+                                                    <label class="control-label" for="min_baby_count">Minimum Baby Number<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="min_baby_count" name="min_baby_count"
@@ -612,8 +603,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="max_baby_count">Maximum Bebek
-                                                        Sayısı<span
+                                                    <label class="control-label" for="max_baby_count">Maximum Number of Babies<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="max_baby_count" name="max_baby_count"
@@ -622,8 +612,8 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="min_child_count">Minimum Çocuk
-                                                        Sayısı
+                                                    <label class="control-label" for="min_child_count">
+Minimum Number of Children
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="min_child_count" name="min_child_count"
@@ -632,8 +622,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="max_child_count">Maximum Çocuk
-                                                        Sayısı
+                                                    <label class="control-label" for="max_child_count">Maximum Number of Children
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="max_child_count" name="max_child_count"
@@ -642,8 +631,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="min_young_count">Minimum Genç
-                                                        Sayısı
+                                                    <label class="control-label" for="min_young_count">Minimum Youth Number
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="min_young_count" name="min_young_count"
@@ -652,8 +640,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="max_young_count">Maximum Genç
-                                                        Sayısı
+                                                    <label class="control-label" for="max_young_count">Maximum Number of Teens
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="max_young_count" name="max_young_count"
@@ -662,7 +649,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="single_factor">Single Çarpan
+                                                    <label class="control-label" for="single_factor">Single Multiplier
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="single_factor" name="single_factor"
@@ -671,7 +658,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="double_factor">Double Çarpan
+                                                    <label class="control-label" for="double_factor">Double Multiplier
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="double_factor" name="double_factor"
@@ -680,7 +667,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="triple_factor">Triple Çarpan
+                                                    <label class="control-label" for="triple_factor">Triple Multiplier
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="triple_factor" name="triple_factor"
@@ -689,7 +676,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="quad_factor">Quad Çarpan
+                                                    <label class="control-label" for="quad_factor">Quad Multiplier
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="quad_factor" name="quad_factor"
@@ -698,7 +685,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="five_factor">Five Çarpan
+                                                    <label class="control-label" for="five_factor">Five Multiplier
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input value="{{ old('five_factor') }}" type="text" id="five_factor"
@@ -708,7 +695,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="six_factor">Six Çarpan
+                                                    <label class="control-label" for="six_factor">Six Multiplier
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input value="{{ old('six_factor') }}" type="text" id="six_factor"
@@ -720,8 +707,7 @@
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="max_bed_count">Maximum Yatak
-                                                        Sayısı
+                                                    <label class="control-label" for="max_bed_count">Maximum Number of Beds
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="max_bed_count" name="max_bed_count"
@@ -730,7 +716,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="landscape">Manzara
+                                                    <label class="control-label" for="landscape">View
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" value="{{ old('landscape') }}" id="landscape"
@@ -741,8 +727,8 @@
                                             <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label class="control-label"
-                                                           for="baby_count_limit_with_max_adult">Maximum Yetişkin
-                                                        Yanında Bebek Sayısı
+                                                           for="baby_count_limit_with_max_adult">
+Maximum Number of Babies with Adult
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="baby_count_limit_with_max_adult"
@@ -753,8 +739,8 @@
                                             <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label class="control-label"
-                                                           for="child_count_limit_with_max_adult">Maximum Yetişkin
-                                                        Yanında Çocuk Sayısı
+                                                           for="child_count_limit_with_max_adult">
+Maximum Number of Children with Adults
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="child_count_limit_with_max_adult"
@@ -765,8 +751,7 @@
                                             <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label class="control-label"
-                                                           for="young_count_limit_with_max_adult">Maximum Yetişkin
-                                                        Yanında Genç Sayısı
+                                                           for="young_count_limit_with_max_adult">Maximum Adolescents With Adults
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="young_count_limit_with_max_adult"
@@ -779,8 +764,7 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="control-label float-left"
-                                                           for="young_count_limit_with_max_adult">Oda Özellikleri
-                                                        (Max 3)
+                                                           for="young_count_limit_with_max_adult">Room Features (Max 3)
                                                         <span class="required">
                                                                 <a href="#"
                                                                    class="btn btn-success btn-xs room_features">
@@ -799,7 +783,7 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="control-label float-left"
-                                                           for="young_count_limit_with_max_adult">Oda Olanakları
+                                                           for="young_count_limit_with_max_adult">Room Facilities
                                                         <span class="required">
                                                                 <a href="#"
                                                                    class="btn btn-success btn-xs room_possibilities">
@@ -819,7 +803,7 @@
                                         <div class="col-md-2">
                                             <button type="submit" class="btn btn-success"
                                                     style="margin-top: 25px;width: 100%;">
-                                                Kaydet
+                                                Save
                                             </button>
                                         </div>
                                     </form>
@@ -829,20 +813,20 @@
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr>
-                                                    <th>Resmi</th>
-                                                    <th>Tipi</th>
-                                                    <th>Adı</th>
-                                                    <th>Sayısı</th>
-                                                    <th>Min. Yet.</th>
-                                                    <th>Max. Yet.</th>
-                                                    <th>Min. Bebek</th>
-                                                    <th>Max. Bebek</th>
-                                                    <th>Min. Çocuk</th>
-                                                    <th>Max. Çocuk</th>
-                                                    <th>Min. Genç</th>
-                                                    <th>Max. Genç</th>
-                                                    <th>Max. Yatak</th>
-                                                    <th>Işlemler</th>
+                                                    <th>Formal</th>
+                                                    <th>Type</th>
+                                                    <th>First Name</th>
+                                                    <th>Number</th>
+                                                    <th>Min. Enough.</th>
+                                                    <th>Max. Enough.</th>
+                                                    <th>Min. Baby</th>
+                                                    <th>Max. Baby</th>
+                                                    <th>Min. Child</th>
+                                                    <th>Max. Child</th>
+                                                    <th>Min. Young</th>
+                                                    <th>Max. Young</th>
+                                                    <th>Max. Bed</th>
+                                                    <th>Transactions</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -899,7 +883,7 @@
                                 <div role="tabpanel"
                                      class="tab-pane fade {{ app('request')->input('tab') == 'facilities' ? 'active in' : '' }}"
                                      id="facilities" aria-labelledby="profile-tab">
-                                    <h3>Özellikler</h3>
+                                    <h3>Features</h3>
                                     <div class="ln_solid"></div>
                                     <form class="form-horizontal" method="POST" action="{{url('adminpanel/facility')}}">
                                         <input type="hidden" name="hotel_id" value="{{$hotel->id}}">
@@ -924,7 +908,7 @@
                                             </div>
                                             <div class="ln_solid"></div>
                                         @endforeach
-                                        <button type="submit" class="btn btn-success" style="margin-top: 26px;">Kaydet
+                                        <button type="submit" class="btn btn-success" style="margin-top: 26px;">Save
                                         </button>
                                     </form>
 
@@ -932,14 +916,15 @@
                                 <div role="tabpanel"
                                      class="tab-pane fade {{ app('request')->input('tab') == 'general_setting' ? 'active in' : '' }}"
                                      id="general_setting" aria-labelledby="profile-tab">
-                                    <h4>Oda Tanım</h4>
+                                    <h4>Room Description</h4>
                                     <div class="ln_solid"></div>
                                     <form class="form-horizontal" method="POST"
                                           action="{{url('adminpanel/hotel_setting')}}" enctype="multipart/form-data">
                                         @csrf
                                         <input type="hidden" name="id" value="{{$hotel->id}}">
                                         <div class="form-group">
-                                            <label class="control-label">Ödeme Tipleri</label>
+                                            <label class="control-label">
+Payment Types</label>
                                             <select class="payment_types form-control" multiple="multiple"
                                                     name="payment_types[]">
                                                 @foreach($payment_types as $payment_type)
@@ -948,31 +933,31 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="page_title">Sayfa Başlığı
+                                            <label class="control-label" for="page_title">Page Title
                                             </label>
                                             <input type="text" id="page_title" name="page_title"
                                                    class="form-control" value="{{ $hotel->seo->page_title ?? old('page_title')}}">
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="seo_title">Seo Başlığı
+                                            <label class="control-label" for="seo_title">Seo Title
                                             </label>
                                             <input type="text" id="seo_title" name="seo_title"
                                                    class="form-control" value="{{ $hotel->seo->seo_title ?? old('seo_title') }}">
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="seo_keyword">Seo Anahtar Sözcükler
+                                            <label class="control-label" for="seo_keyword">Seo Keywords
                                             </label>
                                             <input type="text" id="seo_keyword" name="seo_keyword"
                                                    class="form-control" value="{{ $hotel->seo->seo_keyword ?? old('seo_keyword') }}">
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="seo_description">Seo Açıklama
+                                            <label class="control-label" for="seo_description">Seo Description
                                             </label>
                                             <textarea rows="2" id="seo_description" name="seo_description"
                                                       class="form-control">{{ $hotel->seo->seo_description ?? old('seo_description') }}</textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label for="promo_photo">Reklam Görseli</label>
+                                            <label for="promo_photo">Advertising Image</label>
                                             <input type="file" name="promo_photo" id="promo_photo">
                                         </div>
                                         @isset($hotel->promo_photo)
@@ -980,7 +965,7 @@
                                                  width="200px" height="200px">
                                         @endisset
                                         <div class="form-group">
-                                            <label class="control-label">Otel Konsepti</label>
+                                            <label class="control-label">Hotel Concept</label>
                                             <select class="js-example-basic-multiple" multiple="multiple"
                                                     name="themes[]">
                                                 @foreach($themes as $theme)
@@ -989,7 +974,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label">Otel Konsepti</label>
+                                            <label class="control-label">Hotel Concept</label>
                                             <select class="js-example-basic-multiple" name="features[]"
                                                     multiple="multiple">
                                                 @foreach($features as $feature)
@@ -1000,21 +985,21 @@
                                         <div class="form-group">
                                             <label>
                                                 <input type="checkbox" class="js-switch" name="reservation"
-                                                       value="1" {{$hotel->reservation ? "checked":""}}/> Rezervasyon
+                                                       value="1" {{$hotel->reservation ? "checked":""}}/> Reservation
                                             </label>
                                         </div>
 
-                                        <button type="submit" class="btn btn-success" style="margin-top: 26px;">Kaydet
+                                        <button type="submit" class="btn btn-success" style="margin-top: 26px;">Save
                                         </button>
                                     </form>
-                                    <h4>Rezervasyon Sayfasındaki Transfer Bilgileri</h4>
+                                    <h4>Transfer Information on the Booking Page</h4>
                                     <div class="row">
                                         <form action="{{ route('hotel.transfer.store') }}" method="post">
                                             @csrf
                                             <input type="hidden" name="hotel_id" value="{{ $hotel->id }}">
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Nereden
+                                                    <label class="control-label" for="name">Where from
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input type="text" id="name" name="transfer_from_location"
@@ -1023,7 +1008,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Nereye<span
+                                                    <label class="control-label" for="name">Where<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="name" name="transfer_to_location"
@@ -1032,7 +1017,7 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Fiyat<span
+                                                    <label class="control-label" for="name">Price<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <input type="text" id="name" name="transfer_price"
@@ -1041,19 +1026,19 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Tip<span
+                                                    <label class="control-label" for="name">Medicine<span
                                                                 class="required">*</span>
                                                     </label>
                                                     <br>
                                                     <input class="flat" type="radio" checked value="1" id="name"
                                                            name="transfer_type"
-                                                    > Kişi Başı
+                                                    > Per person
                                                     {{--                                                    <input class="flat" type="radio" value="2" id="name" name="transfer_type"--}}
                                                     {{--                                                    > Toplu Taşıma--}}
                                                 </div>
                                             </div>
                                             <div class="col-md-2">
-                                                <input type="submit" class="btn btn-success" value="Kaydet"
+                                                <input type="submit" class="btn btn-success" value="Save"
                                                        style="margin-top: 26px;">
                                             </div>
                                         </form>
@@ -1063,11 +1048,11 @@
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr>
-                                                    <th>Nereden</th>
-                                                    <th>Nereye</th>
-                                                    <th>Fiyat</th>
-                                                    <th>Tip</th>
-                                                    <th>Işlemler</th>
+                                                    <th>Where from</th>
+                                                    <th>Where</th>
+                                                    <th>Price</th>
+                                                    <th>Medicine</th>
+                                                    <th>Transactions</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -1113,11 +1098,11 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Oda Özellikleri Oluştur</h4>
+                        <h4 class="modal-title" id="myModalLabel">Create Room Features</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="name">Oda Özellik Adı<span
+                            <label class="control-label" for="name">Room Feature Name<span
                                         class="required">*</span>
                             </label>
                             <input type="text" id="name" name="name"
@@ -1125,8 +1110,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
@@ -1141,11 +1126,11 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Oda Olanakları Oluştur</h4>
+                        <h4 class="modal-title" id="myModalLabel">Create Room Amenities</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="name">Oda Olanak Adı<span
+                            <label class="control-label" for="name">Room Facility Name<span
                                         class="required">*</span>
                             </label>
                             <input type="text" id="name" name="name"
@@ -1153,7 +1138,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Kaydet</button>
                     </div>
                 </form>
@@ -1210,7 +1195,7 @@
                 type: 'GET',
                 data: '',
                 success: function (data) {
-                    // $("#city_id").attr("disabled", false).html("<option value=''>Seçin..</option>");
+                    // $("#city_id").attr("disabled", false).html("<option value=''>Select..</option>");
                     var selected_city = '';
                     console.log(data);
                     $.each(data, function (index, value) {
@@ -1232,7 +1217,7 @@
                 type: 'GET',
                 data: '',
                 success: function (data) {
-                    // $("#county_id").attr("disabled", false).html("<option value=''>Seçin..</option>");
+                    // $("#county_id").attr("disabled", false).html("<option value=''>Select..</option>");
                     var selected_county = '';
                     $.each(data, function (index, value) {
                         var $county_id = value.id;
@@ -1272,7 +1257,7 @@
                 type: 'GET',
                 data: '',
                 success: function (data) {
-                    // $("#county_id").attr("disabled", false).html("<option value=''>Seçin..</option>");
+                    // $("#county_id").attr("disabled", false).html("<option value=''>Select..</option>");
                     $.each(data, function (index, value) {
                         $("#county_id").append('<option value="' + value.id + '">' + value.name + '</option>');
                     });

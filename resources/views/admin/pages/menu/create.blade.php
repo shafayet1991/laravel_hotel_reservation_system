@@ -6,9 +6,9 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Yeni Bir Menü Oluştur</h2>
+                        <h2>Create a New Menu</h2>
                         <a href="{{ route('menu.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Menüler Listesine Dön
+                            <i class="fa fa-undo"></i> Return to Menus List
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -21,13 +21,13 @@
                                     <div class="col-md-4">
                                         <ul class="nav nav-tabs tabs-left">
                                             <li class="active"><a href="#turkish"
-                                                                  data-toggle="tab">TÜRKÇE</a>
+                                                                  data-toggle="tab">TURKISH</a>
                                             </li>
-                                            <li><a href="#english" data-toggle="tab">İNGİLİZCE</a>
+                                            <li><a href="#english" data-toggle="tab">ENGLISH</a>
                                             </li>
-                                            <li><a href="#russian" data-toggle="tab">RUSÇA</a>
+                                            <li><a href="#russian" data-toggle="tab">RUSSIAN</a>
                                             </li>
-                                            <li><a href="#arabic" data-toggle="tab">ARAPÇA</a>
+                                            <li><a href="#arabic" data-toggle="tab">ARABIC</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -35,8 +35,7 @@
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="turkish">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Türkçe
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">Turkish Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -45,8 +44,7 @@
                                             </div>
                                             <div class="tab-pane" id="english">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">İngilizce
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">English Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -55,8 +53,7 @@
                                             </div>
                                             <div class="tab-pane" id="russian">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Rusça
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">Russian Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -65,8 +62,7 @@
                                             </div>
                                             <div class="tab-pane" id="arabic">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="name">Arapça
-                                                        Menü Adı<span
+                                                    <label class="control-label" for="name">Arabic Menu Name<span
                                                             class="required">*</span>
                                                     </label>
                                                     <input type="text" class="form-control"
@@ -80,11 +76,12 @@
                                 <div class="col-md-8">
                                     <div class="row">
                                         <div class="form-group col-md-3">
-                                            <label class="control-label" for="room_type_id">Üst Menü<span
+                                            <label class="control-label" for="room_type_id">
+Top Menu<span
                                                         class="required">*</span>
                                             </label>
                                             <select class="form-control" name="top_id">
-                                                <option value="0">Yeni Üst Menü</option>
+                                                <option value="0">New Top Menu</option>
                                                 {{--                                            @forelse($menus as $menu)--}}
                                                 {{--                                                <option--}}
                                                 {{--                                                    value="{{ $menu->id ?? '' }}">{{ $menu->textTrans('name') ?? '' }}</option>--}}
@@ -93,14 +90,14 @@
                                             </select>
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="control-label">Menü Teması<span
+                                            <label class="control-label">Menu Theme<span
                                                         class="required">*</span>
                                             </label>
                                             <select class="form-control" name="template">
-                                                <option value="staticpage-template">Sabit Sayfa</option>
-                                                <option value="hotel-template">Otel Şablonu</option>
-                                                <option value="tour-template">Tur Şablonu</option>
-                                                <option value="contact-template">İletişim</option>
+                                                <option value="staticpage-template">Fixed Page</option>
+                                                <option value="hotel-template">Hotel Template</option>
+                                                <option value="tour-template">Tour Template</option>
+                                                <option value="contact-template">Contact</option>
                                                 <option value="blog-template">Blog</option>
                                                 {{--                                            <option value="event-template">Etkinlikler</option>--}}
                                                 {{--                                            <option value="blog-template">Blog</option>--}}
@@ -108,7 +105,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="control-label" for="slug">URL Yapılandırması
+                                            <label class="control-label" for="slug">URL Configuration
                                                 <span class="required">*</span>
                                             </label>
                                             <input type="text" id="slug" name="slug" class="form-control">
@@ -116,21 +113,21 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-4">
-                                            <label class="control-label" for="page_title">Sayfa Başlığı<span
+                                            <label class="control-label" for="page_title">Page Title<span
                                                         class="required">*</span>
                                             </label>
                                             <input type="text" id="page_title" name="page_title"
                                                    class="form-control" value="{{ old('page_title') }}">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="control-label" for="seo_title">Seo Başlığı<span
+                                            <label class="control-label" for="seo_title">Seo Title<span
                                                         class="required">*</span>
                                             </label>
                                             <input type="text" id="seo_title" name="seo_title"
                                                    class="form-control" value="{{ old('seo_title') }}">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="control-label" for="seo_keyword">Seo Anahtar Sözcükler<span
+                                            <label class="control-label" for="seo_keyword">Seo Keywords<span
                                                         class="required">*</span>
                                             </label>
                                             <input type="text" id="seo_keyword" name="seo_keyword"
@@ -140,7 +137,7 @@
                                     <div class="row">
                                         <div class="form-group">
                                             <label class="control-label" for="seo_description">
-                                                Seo Açıklaması<span class="required">*</span>
+                                                Seo Description<span class="required">*</span>
                                             </label>
                                             <textarea class="form-control" rows="2"
                                                       name="seo_description">{{ old('seo_description') }}</textarea>
@@ -148,7 +145,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-success">Kaydet</button>
+                                            <button type="submit" class="btn btn-success">Save</button>
                                         </div>
                                     </div>
                                 </div>

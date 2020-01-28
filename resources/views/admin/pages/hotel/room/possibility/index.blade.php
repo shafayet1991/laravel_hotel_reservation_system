@@ -16,8 +16,8 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Oda Özellik Adı</th>
-                                <th>Kısa Hali</th>
+                                <th>Room Feature Name</th>
+                                <th>Short version</th>
                             </tr>
                             </thead>
                             <tbody>

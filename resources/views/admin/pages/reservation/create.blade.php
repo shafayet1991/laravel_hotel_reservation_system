@@ -1,7 +1,8 @@
 @extends('admin.templates.admin.layout')
 @section('content')
     <div class="">
-        Oluşturma kısmı yapılacak
+
+        Creation part to be made
         <div class="clearfix"></div>
     </div>
 @endsection

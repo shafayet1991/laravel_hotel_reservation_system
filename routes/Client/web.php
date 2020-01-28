@@ -1,8 +1,8 @@
 <?php
 //Auth::routes();
 
-Route::get('yonetim', ['as' => 'login', 'uses' => 'Admin\Auth\LoginController@showLoginForm']);
-Route::post('yonetim', ['as' => 'login', 'uses' => 'Admin\Auth\LoginController@login']);
+Route::get('login', ['as' => 'login', 'uses' => 'Admin\Auth\LoginController@showLoginForm']);
+Route::post('login', ['as' => 'login', 'uses' => 'Admin\Auth\LoginController@login']);
 Route::post('logout', ['as' => 'logout', 'uses' => 'Admin\Auth\LoginController@logout']);
 
 Route::get('/', 'Client\Home\HomeController@index')->name('client.homepage');

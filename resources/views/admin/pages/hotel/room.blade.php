@@ -15,7 +15,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Kontrat Oluştur</h4>
+                        <h4 class="modal-title" id="myModalLabel">Create Contract</h4>
                     </div>
                     <div class="modal-body">
                         @csrf
@@ -23,7 +23,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label" for="start_date">Baslangic Tarihi
+                                    <label class="control-label" for="start_date">Starting date
                                         <span class="required"></span>
                                     </label>
                                     <input type="text" class="form-control date" id="start_date" name="start_date"
@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label" for="end_date">Bitis Tarihi <span
+                                    <label class="control-label" for="end_date">End Date <span
                                                 class="required"></span>
                                     </label>
                                     <input type="text" class="form-control date" id="end_date" name="end_date"
@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="pp_price_calc_price_create">PP Fiyatı<span
+                                    <label class="control-label" for="pp_price_calc_price_create">PP Price<span
                                                 class="required"></span>
                                     </label>
                                     <input type="text" class="form-control" id="pp_price_calc_price_create"
@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="pp_purchase_price">Extra Yatak
+                                    <label class="control-label" for="pp_purchase_price">Extra Bed
                                         <span class="required"></span>
                                     </label>
                                     <input type="text" class="form-control" id="extra_bed_price" name="extra_bed_price">
@@ -58,7 +58,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="board_type_id">Pansiyon Tipi<span
+                                    <label class="control-label" for="board_type_id">Pension Type<span
                                                 class="required">*</span>
                                     </label>
                                     <select class="form-control" name="board_type_id">
@@ -128,112 +128,112 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_single_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_single_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_single_create" name="baby_one_price_for_single">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_single_create" name="baby_more_price_for_single">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_single_create" name="baby_one_price_for_single">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_single_create" name="baby_more_price_for_single">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_double_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_double_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_double_create" name="baby_one_price_for_double">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_double_create" name="baby_more_price_for_double">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_double_create" name="baby_one_price_for_double">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_double_create" name="baby_more_price_for_double">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_triple_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_triple_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_triple_create" name="baby_one_price_for_triple">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_triple_create" name="baby_more_price_for_triple">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_triple_create" name="baby_one_price_for_triple">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_triple_create" name="baby_more_price_for_triple">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_quad_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_quad_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_quad_create" name="baby_one_price_for_quad">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_quad_create" name="baby_more_price_for_quad">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_quad_create" name="baby_one_price_for_quad">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_quad_create" name="baby_more_price_for_quad">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_five_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_five_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_five_create" name="baby_one_price_for_five">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_five_create" name="baby_more_price_for_five">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_five_create" name="baby_one_price_for_five">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_five_create" name="baby_more_price_for_five">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_five_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_five_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_five_create" name="baby_one_price_for_five">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_five_create" name="baby_more_price_for_five">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_five_create" name="baby_one_price_for_five">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_five_create" name="baby_more_price_for_five">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_single_create">Çocuk
+                                    <label class="control-label" for="child_one_price_for_single_create">Child
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_single_create" name="child_one_price_for_single">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_single_create" name="child_more_price_for_single">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_single_create" name="child_one_price_for_single">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_single_create" name="child_more_price_for_single">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_double_create">Çocuk
+                                    <label class="control-label" for="child_one_price_for_double_create">Child
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_double_create" name="child_one_price_for_double">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_double_create" name="child_more_price_for_double">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_double_create" name="child_one_price_for_double">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_double_create" name="child_more_price_for_double">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_triple_create">Çocuk
+                                    <label class="control-label" for="child_one_price_for_triple_create">Child
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_triple_create" name="child_one_price_for_triple">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_triple_create" name="child_more_price_for_triple">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_triple_create" name="child_one_price_for_triple">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_triple_create" name="child_more_price_for_triple">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_quad_create">Çocuk
+                                    <label class="control-label" for="child_one_price_for_quad_create">Child
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_quad_create" name="child_one_price_for_quad">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_quad_create" name="child_more_price_for_quad">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_quad_create" name="child_one_price_for_quad">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_quad_create" name="child_more_price_for_quad">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_five_create">Çocuk
+                                    <label class="control-label" for="child_one_price_for_five_create">Child
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_five_create" name="child_one_price_for_five">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_five_create" name="child_more_price_for_five">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_five_create" name="child_one_price_for_five">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_five_create" name="child_more_price_for_five">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_six_create">Çocuk
+                                    <label class="control-label" for="child_one_price_for_six_create">Child
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_six_create" name="child_one_price_for_six">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_six_create" name="child_more_price_for_six">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_six_create" name="child_one_price_for_six">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_six_create" name="child_more_price_for_six">
                                 </div>
                             </div>
                         </div>
@@ -243,8 +243,8 @@
                                     <label class="control-label" for="young_one_price_for_single_create">Genç
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_single_create" name="young_one_price_for_single">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_single_create" name="young_more_price_for_single">
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_single_create" name="young_one_price_for_single">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_single_create" name="young_more_price_for_single">
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -252,8 +252,8 @@
                                     <label class="control-label" for="young_one_price_for_double_create">Genç
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_double_create" name="young_one_price_for_double">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_double_create" name="young_more_price_for_double">
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_double_create" name="young_one_price_for_double">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_double_create" name="young_more_price_for_double">
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -261,8 +261,8 @@
                                     <label class="control-label" for="young_one_price_for_triple_create">Genç
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_triple_create" name="young_one_price_for_triple">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_triple_create" name="young_more_price_for_triple">
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_triple_create" name="young_one_price_for_triple">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_triple_create" name="young_more_price_for_triple">
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -270,8 +270,8 @@
                                     <label class="control-label" for="young_one_price_for_quad_create">Genç
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_quad_create" name="young_one_price_for_quad">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_quad_create" name="young_more_price_for_quad">
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_quad_create" name="young_one_price_for_quad">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_quad_create" name="young_more_price_for_quad">
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -279,8 +279,8 @@
                                     <label class="control-label" for="young_one_price_for_five_create">Genç
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_five_create" name="young_one_price_for_five">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_five_create" name="young_more_price_for_five">
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_five_create" name="young_one_price_for_five">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_five_create" name="young_more_price_for_five">
                                 </div>
                             </div>
                             <div class="col-md-2">
@@ -288,15 +288,15 @@
                                     <label class="control-label" for="young_one_price_for_quad_create">Genç
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_six_create" name="young_one_price_for_six">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_six_create" name="young_more_price_for_six">
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_six_create" name="young_one_price_for_six">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_six_create" name="young_more_price_for_six">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
@@ -311,7 +311,8 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Kontrat Düzenle</h4>
+                        <h4 class="modal-title" id="myModalLabel">
+Edit Contract</h4>
                     </div>
                     <div class="modal-body">
                         @csrf
@@ -319,7 +320,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label" for="start_date">Baslangic Tarihi
+                                    <label class="control-label" for="start_date">Starting date
                                         <span class="required"></span>
                                     </label>
                                     <input type="text" class="form-control date" id="start_date" name="start_date"
@@ -328,7 +329,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label" for="end_date">Bitis Tarihi <span
+                                    <label class="control-label" for="end_date">End Date <span
                                                 class="required"></span>
                                     </label>
                                     <input type="text" class="form-control date" id="end_date" name="end_date"
@@ -337,7 +338,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="pp_price_calc_price_create">PP Fiyatı<span
+                                    <label class="control-label" for="pp_price_calc_price_create">PP Price<span
                                                 class="required"></span>
                                     </label>
                                     <input type="text" class="form-control" id="pp_price_calc_price_update"
@@ -346,7 +347,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="pp_purchase_price">Extra Yatak
+                                    <label class="control-label" for="pp_purchase_price">Extra Bed
                                         <span class="required"></span>
                                     </label>
                                     <input type="text" class="form-control" id="extra_bed_price" name="extra_bed_price">
@@ -354,7 +355,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="room_type_id">Pansiyon Tipi<span
+                                    <label class="control-label" for="room_type_id">Pension Type<span
                                                 class="required">*</span>
                                     </label>
                                     <select class="form-control" name="board_type_id">
@@ -424,175 +425,175 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_single_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_single_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_single_create" name="baby_one_price_for_single">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_single_create" name="baby_more_price_for_single">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_single_create" name="baby_one_price_for_single">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_single_create" name="baby_more_price_for_single">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_double_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_double_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_double_create" name="baby_one_price_for_double">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_double_create" name="baby_more_price_for_double">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_double_create" name="baby_one_price_for_double">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_double_create" name="baby_more_price_for_double">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_triple_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_triple_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_triple_create" name="baby_one_price_for_triple">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_triple_create" name="baby_more_price_for_triple">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_triple_create" name="baby_one_price_for_triple">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_triple_create" name="baby_more_price_for_triple">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_quad_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_quad_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_quad_create" name="baby_one_price_for_quad">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_quad_create" name="baby_more_price_for_quad">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_quad_create" name="baby_one_price_for_quad">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_quad_create" name="baby_more_price_for_quad">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_five_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_five_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_five_create" name="baby_one_price_for_five">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_five_create" name="baby_more_price_for_five">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_five_create" name="baby_one_price_for_five">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_five_create" name="baby_more_price_for_five">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="baby_one_price_for_six_create">Bebek
+                                    <label class="control-label" for="baby_one_price_for_six_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="baby_one_price_for_six_create" name="baby_one_price_for_six">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="baby_more_price_for_six_create" name="baby_more_price_for_six">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_single_create">Çocuk
-                                        <span class="required"></span>
-                                    </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_single_create" name="child_one_price_for_single">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_single_create" name="child_more_price_for_single">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_double_create">Çocuk
-                                        <span class="required"></span>
-                                    </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_double_create" name="child_one_price_for_double">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_double_create" name="child_more_price_for_double">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_triple_create">Çocuk
-                                        <span class="required"></span>
-                                    </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_triple_create" name="child_one_price_for_triple">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_triple_create" name="child_more_price_for_triple">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_quad_create">Çocuk
-                                        <span class="required"></span>
-                                    </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_quad_create" name="child_one_price_for_quad">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_quad_create" name="child_more_price_for_quad">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_quad_create">Çocuk
-                                        <span class="required"></span>
-                                    </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_five_create" name="child_one_price_for_five">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_five_create" name="child_more_price_for_five">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label class="control-label" for="child_one_price_for_quad_create">Çocuk
-                                        <span class="required"></span>
-                                    </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="child_one_price_for_six_create" name="child_one_price_for_six">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="child_more_price_for_six_create" name="child_more_price_for_six">
+                                    <input type="text" placeholder="First" class="form-control" id="baby_one_price_for_six_create" name="baby_one_price_for_six">
+                                    <input type="text" placeholder="Post" class="form-control" id="baby_more_price_for_six_create" name="baby_more_price_for_six">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="young_one_price_for_single_create">Genç
+                                    <label class="control-label" for="child_one_price_for_single_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_single_create" name="young_one_price_for_single">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_single_create" name="young_more_price_for_single">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_single_create" name="child_one_price_for_single">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_single_create" name="child_more_price_for_single">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="young_one_price_for_double_create">Genç
+                                    <label class="control-label" for="child_one_price_for_double_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_double_create" name="young_one_price_for_double">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_double_create" name="young_more_price_for_double">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_double_create" name="child_one_price_for_double">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_double_create" name="child_more_price_for_double">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="young_one_price_for_triple_create">Genç
+                                    <label class="control-label" for="child_one_price_for_triple_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_triple_create" name="young_one_price_for_triple">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_triple_create" name="young_more_price_for_triple">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_triple_create" name="child_one_price_for_triple">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_triple_create" name="child_more_price_for_triple">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="young_one_price_for_quad_create">Genç
+                                    <label class="control-label" for="child_one_price_for_quad_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_quad_create" name="young_one_price_for_quad">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_quad_create" name="young_more_price_for_quad">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_quad_create" name="child_one_price_for_quad">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_quad_create" name="child_more_price_for_quad">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="young_one_price_for_quad_create">Genç
+                                    <label class="control-label" for="child_one_price_for_quad_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_five_create" name="young_one_price_for_five">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_five_create" name="young_more_price_for_five">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_five_create" name="child_one_price_for_five">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_five_create" name="child_more_price_for_five">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="young_one_price_for_quad_create">Genç
+                                    <label class="control-label" for="child_one_price_for_quad_create">Baby
                                         <span class="required"></span>
                                     </label>
-                                    <input type="text" placeholder="İlk" class="form-control" id="young_one_price_for_six_create" name="young_one_price_for_six">
-                                    <input type="text" placeholder="Sonrası" class="form-control" id="young_more_price_for_six_create" name="young_more_price_for_six">
+                                    <input type="text" placeholder="First" class="form-control" id="child_one_price_for_six_create" name="child_one_price_for_six">
+                                    <input type="text" placeholder="Post" class="form-control" id="child_more_price_for_six_create" name="child_more_price_for_six">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="young_one_price_for_single_create">Baby
+                                        <span class="required"></span>
+                                    </label>
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_single_create" name="young_one_price_for_single">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_single_create" name="young_more_price_for_single">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="young_one_price_for_double_create">Baby
+                                        <span class="required"></span>
+                                    </label>
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_double_create" name="young_one_price_for_double">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_double_create" name="young_more_price_for_double">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="young_one_price_for_triple_create">Baby
+                                        <span class="required"></span>
+                                    </label>
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_triple_create" name="young_one_price_for_triple">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_triple_create" name="young_more_price_for_triple">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="young_one_price_for_quad_create">Baby
+                                        <span class="required"></span>
+                                    </label>
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_quad_create" name="young_one_price_for_quad">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_quad_create" name="young_more_price_for_quad">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="young_one_price_for_quad_create">Baby
+                                        <span class="required"></span>
+                                    </label>
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_five_create" name="young_one_price_for_five">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_five_create" name="young_more_price_for_five">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="young_one_price_for_quad_create">Baby
+                                        <span class="required"></span>
+                                    </label>
+                                    <input type="text" placeholder="First" class="form-control" id="young_one_price_for_six_create" name="young_one_price_for_six">
+                                    <input type="text" placeholder="Post" class="form-control" id="young_more_price_for_six_create" name="young_more_price_for_six">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
@@ -607,11 +608,11 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Kontrat Kopyasını Oluştur</h4>
+                        <h4 class="modal-title" id="myModalLabel">Create Contract Copy</h4>
                     </div>
                     <input type="hidden" id="contract_id" name="contract_id">
                     <div class="modal-body">
-                            <p>Seçilen odalar için kontrat oluşturulacaktır.</p>
+                            <p>A contract will be created for the selected rooms.</p>
                         @forelse($room->hotel->rooms as $row)
                             <p>
                                 <label for="room_{{ $row->id }}">
@@ -620,12 +621,12 @@
                                 </label>
                             </p>
                         @empty
-                            Kontrat kopyalabilmek için bu oda dışında, herhangi bir oda bulunması gerekir.
+                        To be able to copy the contract, there must be any room other than this room.
                         @endforelse
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
@@ -641,7 +642,8 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Satış Durdur</h4>
+                        <h4 class="modal-title" id="myModalLabel">
+Stop Selling</h4>
                     </div>
                     <input type="hidden" id="contract_id" name="contract_id">
                     <div class="modal-body">
@@ -649,7 +651,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label" for="start_date">
-                                        Başlangıç Tarihi <span class="required"></span>
+                                    Starting date <span class="required"></span>
                                     </label>
                                     <input type="text" class="form-control date" id="start_date" name="start_date" autocomplete="off">
                                 </div>
@@ -657,16 +659,16 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label" for="end_date">
-                                        Bitiş Tarihi <span class="required"></span>
+                                    End Date <span class="required"></span>
                                     </label>
                                     <input type="text" class="form-control date" id="end_date" name="end_date" autocomplete="off">
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-danger" style="margin-top: 25px;">Tarihleri Arası Satışları Durdur</button>
+                            <button type="submit" class="btn btn-danger" style="margin-top: 25px;">Stop Sales Between Dates</button>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>
@@ -681,11 +683,11 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Oda Özellikleri Oluştur</h4>
+                        <h4 class="modal-title" id="myModalLabel">Create Room Features</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="name">Oda Özellik Adı<span
+                            <label class="control-label" for="name">Room Feature Name<span
                                         class="required">*</span>
                             </label>
                             <input type="text" id="name" name="name"
@@ -693,8 +695,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
@@ -709,11 +711,11 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Oda Olanakları Oluştur</h4>
+                        <h4 class="modal-title" id="myModalLabel">Create Room Amenities</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group col-md-6">
-                            <label class="control-label" for="name">Oda Olanak Adı<span
+                            <label class="control-label" for="name">Room Facility Name<span
                                         class="required">*</span>
                             </label>
                             <input type="text" id="name" name="name"
@@ -721,8 +723,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
@@ -739,27 +741,30 @@
                         Geri
                     </a>
                     <button type="button" class="btn btn-info" data-toggle="modal"
-                            data-target=".create-modal-lg">Kontrat Oluştur
+                            data-target=".create-modal-lg">Create Contract
+
                     </button>
                     <button type="button" class="btn btn-danger" data-toggle="modal"
-                            data-target=".stop_create_modal">Satış Durdurma
+                            data-target=".stop_create_modal">
+Stop Selling
                     </button>
                     {{--                        <a href="{{url('/adminpanel/'.$room->id.'/room_person_detail')}}"--}}
                     {{--                           class="btn btn-primary btn-md">--}}
                     {{--                            <i class="fa fa-plus-circle"></i>--}}
-                    {{--                            Kişi Detayları--}}
+                    {{--                            Contact Details--}}
                     {{--                        </a>--}}
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
                     <h4>
-                        <strong style="font-size:17px">{{ Helper::custom_where_am_i($names) }}</strong> adlı yeri inceliyorsunuz şu anda.
+                        <strong style="font-size:17px">{{ Helper::custom_where_am_i($names) }}</strong> 
+You are currently reviewing.
                     </h4>
                     <div class="">
                         <div class="x_panel">
                             <div class="x_title">
                                 <h2>
-                                    <i class="fa fa-bars"></i> Oda Bilgileri <small> Güncelle </small>
+                                    <i class="fa fa-bars"></i> Room Info <small> Update </small>
                                 </h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
@@ -786,7 +791,8 @@
                                     <div class="row">
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="room_type_id">Oda Tipi<span
+                                                <label class="control-label" for="room_type_id">Room type
+<span
                                                             class="required">*</span>
                                                 </label>
                                                 <select class="form-control" name="room_type_id" required>
@@ -799,7 +805,8 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="name">Oda Adı
+                                                <label class="control-label" for="name">
+Room Name
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->name ?? '' }}" type="text" id="name" name="name"
@@ -809,7 +816,8 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
 
-                                                <label class="control-label" for="code">Oda Kodu<span
+                                                <label class="control-label" for="code">
+Room Code<span
                                                             class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->code ?? '' }}" type="text" id="code" name="code"
@@ -818,7 +826,8 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="count">Oda Sayısı<span
+                                                <label class="control-label" for="count">
+Number of rooms<span
                                                             class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->count ?? '' }}" type="text" id="count" name="count"
@@ -828,7 +837,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="min_adult_count">Minimum Yetişkin Sayısı<span
+                                                <label class="control-label" for="min_adult_count">Minimum Adults<span
                                                             class="required">*</span>
                                                 </label>
 
@@ -840,7 +849,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="max_adult_count">Maximum Yetişkin Sayısı<span
+                                                <label class="control-label" for="max_adult_count">Maximum Number of Adults<span
                                                             class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->max_adult_count ?? '' }}" type="text"
@@ -851,7 +860,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="min_baby_count">Minimum Bebek Sayısı<span
+                                                <label class="control-label" for="min_baby_count">Minimum Number of Babies<span
                                                             class="required">*</span>
                                                 </label>
 
@@ -863,7 +872,8 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="max_baby_count">Maximum Bebek Sayısı<span
+                                                <label class="control-label" for="max_baby_count">
+Maximum Number of Babies<span
                                                             class="required">*</span>
                                                 </label>
 
@@ -875,7 +885,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="min_child_count">Minimum Çocuk Sayısı
+                                                <label class="control-label" for="min_child_count">Minimum Number of Children
                                                     <span class="required">*</span>
                                                 </label>
 
@@ -887,7 +897,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="max_child_count">Maximum Çocuk Sayısı
+                                                <label class="control-label" for="max_child_count">Maximum Number of Children
                                                     <span class="required">*</span>
                                                 </label>
 
@@ -899,7 +909,8 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="min_young_count">Minimum Genç Sayısı
+                                                <label class="control-label" for="min_young_count">
+Minimum Youth Number
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->min_young_count ?? '' }}" type="text"
@@ -910,7 +921,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="max_young_count">Maximum Genç Sayısı
+                                                <label class="control-label" for="max_young_count">Maximum Number of Teens
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->max_young_count ?? '' }}" type="text"
@@ -922,7 +933,7 @@
 
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="single_factor">Single Çarpan
+                                                <label class="control-label" for="single_factor">Single Multiplier
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->single_factor ?? '' }}" type="text" id="single_factor" name="single_factor"
@@ -931,7 +942,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="double_factor">Double Çarpan
+                                                <label class="control-label" for="double_factor">Double Multiplier
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->double_factor ?? '' }}" type="text" id="double_factor" name="double_factor"
@@ -940,7 +951,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="triple_factor">Triple Çarpan
+                                                <label class="control-label" for="triple_factor">Triple Multiplier
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->triple_factor ?? '' }}" type="text" id="triple_factor" name="triple_factor"
@@ -949,7 +960,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="quad_factor">Quad Çarpan
+                                                <label class="control-label" for="quad_factor">Quad Multiplier
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->quad_factor ?? '' }}" type="text" id="quad_factor" name="quad_factor"
@@ -958,7 +969,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="five_factor">Five Çarpan
+                                                <label class="control-label" for="five_factor">Five Multiplier
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->five_factor ?? '' }}" type="text" id="five_factor" name="five_factor"
@@ -967,7 +978,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="six_factor">Six Çarpan
+                                                <label class="control-label" for="six_factor">Six Multiplier
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->six_factor ?? '' }}" type="text" id="six_factor" name="six_factor"
@@ -978,7 +989,7 @@
                                     <div class="row">
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="max_bed_count">Maximum Yatak Sayısı
+                                                <label class="control-label" for="max_bed_count">Maximum Number of Beds
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input value="{{ $room->max_bed_count ?? '' }}" type="text" id="max_bed_count"
@@ -988,7 +999,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="landscape">Manzara
+                                                <label class="control-label" for="landscape">View
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input type="text" value="{{ $room->landscape ?? old('landscape') }}" id="landscape" name="landscape"
@@ -997,7 +1008,8 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="baby_count_limit_with_max_adult">Maximum Yetişkin Yanında Bebek Sayısı
+                                                <label class="control-label" for="baby_count_limit_with_max_adult">
+Maximum Number of Babies with Adult
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="baby_count_limit_with_max_adult" name="baby_count_limit_with_max_adult"
@@ -1006,7 +1018,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="child_count_limit_with_max_adult">Maximum Yetişkin Yanında Çocuk Sayısı
+                                                <label class="control-label" for="child_count_limit_with_max_adult">Maximum Number of Children with Adults
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="child_count_limit_with_max_adult" name="child_count_limit_with_max_adult"
@@ -1015,7 +1027,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label class="control-label" for="young_count_limit_with_max_adult">Maximum Yetişkin Yanında Genç Sayısı
+                                                <label class="control-label" for="young_count_limit_with_max_adult">Maximum Adolescents With Adults
                                                     <span class="required">*</span>
                                                 </label>
                                                 <input type="text" id="young_count_limit_with_max_adult" name="young_count_limit_with_max_adult"
@@ -1027,7 +1039,7 @@
 
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label class="control-label float-left" for="young_count_limit_with_max_adult">Oda Özellikleri (Max 3)
+                                                <label class="control-label float-left" for="young_count_limit_with_max_adult">Room Features (Max 3)
                                                     <span class="required">
                                                         <a href="#"
                                                            class="btn btn-success btn-xs room_features">
@@ -1047,7 +1059,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label class="control-label float-left"
-                                                       for="young_count_limit_with_max_adult">Oda Olanakları
+                                                       for="young_count_limit_with_max_adult">Room Facilities
                                                     <span class="required">
                                                                 <a href="#"
                                                                    class="btn btn-success btn-xs room_possibilities">
@@ -1066,7 +1078,7 @@
                                     </div>
                                     <div class="col-md-2">
                                         <button type="submit" class="btn btn-success" style="margin-top: 25px;width: 100%;">
-                                            Kaydet
+                                            Save
                                         </button>
                                     </div>
                                 </form>
@@ -1077,7 +1089,7 @@
                         <div class="x_panel">
                             <div class="x_title">
                                 <h2>
-                                    <i class="fa fa-bars"></i> Kontrat Bilgileri <small> Liste </small>
+                                    <i class="fa fa-bars"></i> Contract Information <small> List </small>
                                 </h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -1102,13 +1114,13 @@
                                         <table class="table table-hover">
                                             <thead>
                                             <tr>
-                                                <th>Numara</th>
-                                                <th>Başlangıç</th>
-                                                <th>Bitiş</th>
-                                                <th>PP Fiyat</th>
-                                                <th>Pansiyon Tipi</th>
-                                                <th>Extra Yatak</th>
-                                                <th>İşlemler</th>
+                                                <th>Number</th>
+                                                <th>Start</th>
+                                                <th>Finish</th>
+                                                <th>PP Price</th>
+                                                <th>Pension Type</th>
+                                                <th>Extra Bed</th>
+                                                <th>Transactions</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -1152,7 +1164,7 @@
                     </div>
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2><i class="fa fa-bars"></i> Satış Durdurma Emirleri <small> Liste </small></h2>
+                            <h2><i class="fa fa-bars"></i> Sales Stop Orders <small> List </small></h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -1176,10 +1188,10 @@
                                     <table class="table table-hover">
                                         <thead>
                                         <tr>
-                                            <th width="10%">Numara</th>
+                                            <th width="10%">Number</th>
                                             <th>Tarih</th>
 
-                                            <th width="10%">İşlemler</th>
+                                            <th width="10%">Transactions</th>
                                         </tr>
                                         </thead>
                                         <tbody>

@@ -6,9 +6,11 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Otel Teması Oluştur</h2>
+                        <h2>Create Hotel Theme
+                        </h2>
                         <a href="{{ route('hotel_theme.index') }}" class="btn btn-info pull-right">
-                            <i class="fa fa-undo"></i> Otel Temaları Listesine Dön</a>
+                            <i class="fa fa-undo"></i>
+                            Return to Hotel Themes List</a>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -18,26 +20,29 @@
                             <input type="hidden" value="{{ $theme->id }}" name="theme_id">
                             <div class="col-md-12">
                                 <div class="form-group col-md-3">
-                                    <label class="control-label" for="slugconvert">Tema Adı<span class="required">*</span>
+                                    <label class="control-label" for="slugconvert">
+                                        Theme Name<span class="required">*</span>
                                     </label>
                                     <input value="{{ $theme->name ?? '' }}" type="text" id="slugconvert" name="name" class="form-control">
                                 </div>
                                 <div class="form-group col-md-3">
-                                    <label class="control-label" for="slug">URL Yapılandırması<span
+                                    <label class="control-label" for="slug">
+                                        URL Configuration<span
                                                 class="required">*</span>
                                     </label>
                                     <input value="{{ $theme->slug ?? '' }}" type="text" id="slug" name="slug" class="form-control">
                                 </div>
                                 <div class="form-group col-md-3">
                                     <img width="200" src="{{ asset($theme->file) }}" class="image"> <br>
-                                    <label class="control-label" for="photo">Tema Fotoğrafı
+                                    <label class="control-label" for="photo">
+                                        Theme Photo
                                         <span class="required">*</span>
                                     </label>
                                     <input type="file" id="photo" name="photo">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-success">Kaydet</button>
+                                <button type="submit" class="btn btn-success">Save</button>
                             </div>
                         </form>
                     </div>

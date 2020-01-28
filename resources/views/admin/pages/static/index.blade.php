@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <a href="{{ route('static_page.create') }}" class="btn btn-success btn-md pull-right">
-                    <i class="fa fa-plus"></i> Sabit Sayfa Ekle
+                    <i class="fa fa-plus"></i> Add Fixed Page
                 </a>
                 <div class="x_panel">
                     <div class="x_title">
@@ -18,9 +18,10 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Ait Olduğu Türkçe Menü</th>
+                                <th>
+                                    Turkish Menu Belonging</th>
 {{--                                <th>Ait Olduğu Üst Menü</th>--}}
-                                <th>İşlemler</th>
+                                <th>Transactions</th>
                             </tr>
                             </thead>
                             <tbody>

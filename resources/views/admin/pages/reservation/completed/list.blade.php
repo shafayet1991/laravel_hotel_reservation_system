@@ -13,16 +13,16 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th width="10%">Durum</th>
-                                <th width="10%">Rezervasyon Numarası</th>
-                                <th width="10%">Giriş Tarihi</th>
-                                <th width="10%">Çıkış Tarihi</th>
-                                <th width="10%">Kişi</th>
-                                <th width="10%">Telefon</th>
-                                <th width="10%">Email</th>
-                                <th width="10%">Toplam Ücret</th>
-                                <th width="10%">Rezervasyon Kaydı</th>
-                                <th width="10%">İşlemler</th>
+                                <th width="10%"> Status </th>
+                                <th width="10%"> Reservation Number </th>
+                                <th width="10%"> Entry Date </th>
+                                <th width = "10%"> Release Date </th>
+                                <th width = "10%"> Person </th>
+                                <th width = "10%"> Phone </th>
+                                <th width = "10%"> Email </th>
+                                <th width = "10%"> Total Fee </th>
+                                <th width = "10%"> Booking Record </th>
+                                <th width = "10%"> Actions </th>
                             </tr>
                             </thead>
                             <tbody>

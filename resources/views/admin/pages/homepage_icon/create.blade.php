@@ -6,9 +6,9 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Yeni Bir Anasayfa İkonu Oluştur</h2>
+                        <h2>Create a New Home Icon</h2>
                         <a href="{{ route('homepage_icon.index') }}" class="btn btn-info btn-md pull-right">
-                            <i class="fa fa-undo"></i> Geri Dön
+                            <i class="fa fa-undo"></i> Turn back
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -18,7 +18,7 @@
                             <form action="{{ route('homepage_icon.store') }}" method="post">
                                 @csrf
                                 <div class="form-group col-md-3">
-                                    <label class="control-label" for="icon">İkon<span
+                                    <label class="control-label" for="icon">Icon<span
                                                 class="required">*</span>
                                     </label>
                                     <input type="text" class="form-control"
@@ -31,14 +31,14 @@
 {{--                                    </select>--}}
                                 </div>
                                 <div class="form-group col-md-3">
-                                    <label class="control-label" for="title">İkon Başlığı<span
+                                    <label class="control-label" for="title">Icon Title<span
                                                 class="required">*</span>
                                     </label>
                                     <input type="text" class="form-control"
                                            value="{{ old('title') }}" name="title">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label class="control-label" for="description">Açıklama<span
+                                    <label class="control-label" for="description">Explanation<span
                                                 class="required">*</span>
                                     </label>
                                     <textarea name="description" id="description"
@@ -46,7 +46,7 @@
                                 </div>
                                 <br>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Kaydet</button>
+                                    <button type="submit" class="btn btn-success">Save</button>
                                 </div>
                             </form>
                         </div>

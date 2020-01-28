@@ -14,11 +14,11 @@ return [
 
     'timezone' => 'UTC',
 
-    'locale' => 'tr',
+    'locale' => 'en',
 
     'fallback_locale' => 'en',
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'en',
 
     'key' => env('APP_KEY'),
 

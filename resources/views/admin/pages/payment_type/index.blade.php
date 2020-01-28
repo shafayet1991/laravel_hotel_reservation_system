@@ -6,11 +6,12 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 @include('admin.pages.hotel.common.button')
                 <a href="{{ route('payment_type.create') }}" class="btn btn-success btn-md pull-right">
-                    <i class="fa fa-plus"></i> Yeni Ekle
+                    <i class="fa fa-plus"></i>
+                    Add New
                 </a>
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Ödeme Yöntemleri
+                        <h2>Payment methods
                             <small>({{ count($rows) ?? 0 }})</small>
                         </h2>
                         <div class="clearfix"></div>
@@ -19,8 +20,8 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Ödeme Yöntemi Adı</th>
-                                <th>İşlemler</th>
+                                <th> Payment Method Name </th>
+                                <Th> Actions </th>
                             </tr>
                             </thead>
                             <tbody>

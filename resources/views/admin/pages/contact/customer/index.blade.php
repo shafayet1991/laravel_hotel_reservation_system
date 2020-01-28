@@ -12,12 +12,12 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th width="10%">Müşteri Adı</th>
-                                <th width="10%">Konu</th>
+                                <th width="10%">Customer name</th>
+                                <th width="10%">topic</th>
                                 <th width="10%">Email</th>
-                                <th width="10%">IP Adresi</th>
-                                <th width="10%">Tarayıcı Bilgileri</th>
-                                <th width="10%">İşlemler</th>
+                                <th width="10%">IP Address</th>
+                                <th width="10%">Browser Information</th>
+                                <th width="10%">Actions</th>
                             </tr>
                             </thead>
                             <tbody>

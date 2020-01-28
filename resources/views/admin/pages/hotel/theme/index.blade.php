@@ -8,7 +8,8 @@
                     <div class="x_title">
                         @include('admin.pages.hotel.common.button')
                         <a href="{{ route('hotel_theme.create')}}" class="pull-right btn btn-success btn-xs">
-                            <i class="fa fa-plus"></i> Tema Ekle
+                            <i class="fa fa-plus"></i>
+                            Add Theme
                         </a>
                         <div class="clearfix"></div>
                     </div>
@@ -16,9 +17,9 @@
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Fotoğraf</th>
-                                <th>Tema Adı</th>
-                                <th>Kısa Hali</th>
+                                <th>Photo</th>
+                                <th>Theme Name</th>
+                                <th>Short version</th>
                             </tr>
                             </thead>
                             <tbody>
